@@ -8,9 +8,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        default: ["Lota Grotesque Alt 2", "sans-serif"],
+        default: ["Lota Grotesque Alt 2", "sans-serif"]
       },
       colors: {
+        "background": "#EEEEEE",
         "biru-sth": "#2593CF",
         "putih-sth": "#FFFFFF"
       }
