@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
     @vite('resources/css/app.css')
 </head>
-<body>
-<section class="text-white body-font bg-cover bg-black " style="background-image: url('{{ asset("assets/bhomepage.png")}}');" >
-</section>
-    <!-- <section>
-        <img src="{{ asset('assets/bhomepage.png') }}" alt="">
-    </section> -->
+<body class="px-20 py-10">
+    <section>
+        <p class="text-3xl font-bold pb-10">Project Terkini</p>
+        <div class="bg-gray-200 p-10 rounded-[22px] w-full flex flex-col sm:flex-row gap-x-14 shadow-xl">
+  
+            <div class="flex-1 content-center">
+                <iframe class="w-full aspect-video rounded-[22px] shadow-2xl"
+                    src="https://www.youtube.com/embed/-AqiQlznVnc"
+                    allow="autoplay"
+                    title="Youtube Video Player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="flex-1">
+                <p class="text-3xl font-bold">LOTUS</p>
+                <p class="text-xl py-2 mt-5">
+                Pusat unggulan yang memfasilitasi penelitian, pelatihan, konsultansi, solusi inovasi dan digitalisasi dalam ranah pariwisata dan hospitality. Pusat unggulan yang memfasilitasi penelitian, pelatihan, konsultansi, solusi inovasi dan digitalisasi dalam ranah.
+                </p>
+                <a href="https://youtu.be/-AqiQlznVnc?si=S2mWJIbaTCrZVyO1" target="_blank" class="underline">
+                    <button class="bg-biru-sth rounded-[30px] underline text-putih-sth px-5 py-1 pb-2 mt-5">
+                        Lihat di Youtube
+                        <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+
+        
+    </section>
 </body>
 </html>

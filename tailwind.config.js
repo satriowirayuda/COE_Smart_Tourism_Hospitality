@@ -8,8 +8,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'lota-grotesque': ['"Lota Grotesque Alt 2"', 'sans-serif'],
+        default: ["Lota Grotesque Alt 2", "sans-serif"],
       },
+      colors: {
+        "biru-sth": "#2593CF",
+        "putih-sth": "#FFFFFF"
+      }
     },
   },
   plugins: [],
