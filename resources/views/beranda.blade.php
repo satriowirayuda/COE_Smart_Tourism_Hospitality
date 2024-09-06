@@ -8,36 +8,16 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <section class="px-36">
-        <div class="py-48">
-        <p class="text-3xl font-bold pb-10">Project Terkini</p>
-        <div class="bg-gray-200 py-10 px-10 rounded-[22px] w-full flex flex-col sm:flex-row gap-x-14 shadow-xl">
-  
-            <div class="flex-1 content-center">
-                <iframe class="w-full aspect-video rounded-[22px] shadow-2xl"
-                    src="https://www.youtube.com/embed/-AqiQlznVnc"
-                    allow="autoplay"
-                    title="Youtube Video Player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-
-            <div class="flex-1">
-                <p class="text-3xl font-bold">LOTUS</p>
-                <p class="text-xl py-2 mt-3 font-light">
-                Pusat unggulan yang memfasilitasi penelitian, pelatihan, konsultansi, solusi inovasi dan digitalisasi dalam ranah pariwisata dan hospitality. Pusat unggulan yang memfasilitasi penelitian, pelatihan, konsultansi, solusi inovasi dan digitalisasi dalam ranah.
-                </p>
-                <a href="https://youtu.be/-AqiQlznVnc?si=S2mWJIbaTCrZVyO1" target="_blank" class="underline">
-                    <button class="bg-biru-sth rounded-[30px] underline text-putih-sth px-5 py-1 pb-2 mt-3">
-                        Lihat di Youtube
-                        <i class="fas fa-arrow-right ml-1"></i>
-                    </button>
-                </a>
-            </div>
-
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('{{ asset('assets/bhomepage.png') }}')">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative text-center text-white flex flex-col justify-center items-center h-full">
+        <div class="font-bold">
+            <p class="text-6xl">Center of Excellence</p>
+            <p class="text-7xl">Smart Tourism & Hospitality</p>
         </div>
-        
+        <div class="px-[300px] pt-5">
+            <p class="text-xl text-[#BBBBBB]">Tingkatkan pengalaman Anda dengan Smart Tourism dan Hospitality! Hemat waktu, jelajahi lebih banyak, dan rasakan kenyamanan teknologi.</p>
+        </div>
         </div>
         
     </section>
@@ -45,9 +25,9 @@
     <section class="w-full bg-background p-10 px-36 py-24">
         <div class="grid grid-cols-6 gap-16">
         <div class="col-span-4">
-            <div class="pr-32 pb-3"><p class="text-3xl font-semibold ">Ketua RA Smart Tourism & Hospitality</p></div>
-            <p class="text-xl pb-3">Dr. Ersy Ervina, S.Sos., MM. Par</p>
-            <p class="text-xl text-justify font-light">Selamat datang di halaman resmi CoE Smart Tourism and Hospitality. Sebagai Ketua, saya bangga mempersembahkan kepada Anda sebuah platform yang menggabungkan kecerdasan, teknologi, dan keberlanjutan untuk mengubah lanskap pariwisata kita. Di sini, kami berkomitmen untuk memberikan layanan terbaik. Menjadikan pengalaman wisata yang tak terlupakan, sambil memajukan destinasi wisata ke tingkat baru.</p>
+            <div class="pr-32 pb-3"><p class="text-4xl font-semibold ">Ketua RA Smart Tourism & Hospitality</p></div>
+            <p class="font-paragraf-sth text-xl pb-3">Dr. Ersy Ervina, S.Sos., MM. Par</p>
+            <p class="font-paragraf-sth text-xl text-justify font-light">Selamat datang di halaman resmi CoE Smart Tourism and Hospitality. Sebagai Ketua, saya bangga mempersembahkan kepada Anda sebuah platform yang menggabungkan kecerdasan, teknologi, dan keberlanjutan untuk mengubah lanskap pariwisata kita. Di sini, kami berkomitmen untuk memberikan layanan terbaik. Menjadikan pengalaman wisata yang tak terlupakan, sambil memajukan destinasi wisata ke tingkat baru.</p>
         </div>
         <div class="col-span-2 flex items-center justify-epy">
             <img src="{{ asset('assets/sementara_bu-ersy.png') }}" alt="" class="w-80">
@@ -92,5 +72,40 @@
         </div>
         
     </section>
+
+    <section class="px-36">
+        <div class="py-40">
+        <p class="text-3xl font-bold pb-10">Project Terkini</p>
+        <div class="bg-gray-200 py-10 px-10 rounded-[22px] w-full flex flex-col sm:flex-row gap-x-14 shadow-xl">
+  
+            <div class="flex-1 content-center">
+                <iframe class="w-full aspect-video rounded-[22px] shadow-2xl"
+                    src="https://www.youtube.com/embed/-AqiQlznVnc"
+                    allow="autoplay"
+                    title="Youtube Video Player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="flex-1">
+                <p class="text-3xl font-bold">LOTUS</p>
+                <p class="text-xl py-2 mt-3 font-light">
+                Pusat unggulan yang memfasilitasi penelitian, pelatihan, konsultansi, solusi inovasi dan digitalisasi dalam ranah pariwisata dan hospitality. Pusat unggulan yang memfasilitasi penelitian, pelatihan, konsultansi, solusi inovasi dan digitalisasi dalam ranah.
+                </p>
+                <a href="https://youtu.be/-AqiQlznVnc?si=S2mWJIbaTCrZVyO1" target="_blank" class="underline">
+                    <button class="bg-biru-sth rounded-[30px] underline text-putih-sth px-5 py-1 pb-2 mt-3">
+                        Lihat di Youtube
+                        <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+        
+        </div>
+        
+    </section>
+
 </body>
 </html>
