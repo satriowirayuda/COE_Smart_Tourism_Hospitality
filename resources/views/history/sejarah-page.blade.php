@@ -9,7 +9,9 @@
 <body>
 
 @include('history.banner')
-@include('history.sejarah-page')
+@include('history.sejarah')
+@include('history.visi-misi')
+<x-footer></x-footer>
     
 </body>
 </html>

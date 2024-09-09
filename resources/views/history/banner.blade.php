@@ -7,10 +7,10 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <section class="relative">
+    <section class="relative pt-28">
         <div class="absolute w-full bg-biru-sth h-[340px] top-0 left-0 -z-10"></div>
         
-        <div class="relative w-[1067px] h-[460px] top-28 mx-auto">
+        <div class="relative w-[1034.53px] h-[446px] mx-auto">
             <img class="w-full h-full rounded-[40px]" src="{{ asset('assets/bhomepage-o.png') }}" alt="">
             <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
                 <div class=" text-center font-bold">
