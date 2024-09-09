@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <section class="px-28 py-10">
+    <section class="px-28 pt-10">
     <div class="text-5xl font-semibold text-center">
         <p>Sejarah COE</p>
         <p>Smart Tourism & Hospitality</p>
