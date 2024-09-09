@@ -1,4 +1,4 @@
-<section class="px-10 lg:px-36 py-40">
+<section class="px-10 lg:px-36 py-20">
     <div class="grid grid-cols-2 gap-x-24">
         <div class="grid-cols-1">
             <p class="text-4xl font-bold drop-shadow-5xl text-center pb-10">News</p>

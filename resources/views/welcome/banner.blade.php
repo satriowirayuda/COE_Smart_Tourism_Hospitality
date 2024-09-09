@@ -1,5 +1,7 @@
 <section class="relative bg-cover bg-center h-screen"
     style="background-image: url('{{ asset('assets/bhomepage.png') }}')" data-aos="zoom-in">
+
+    <!-- <video class="autoplay-mute-play" src="{{ asset('assets/videoo.mp4') }}"></video> -->
     <div class="absolute inset-0 bg-black bg-opacity-70"></div>
     <div class="relative text-center text-white flex flex-col justify-center items-center h-full">
         <div class="font-bold">

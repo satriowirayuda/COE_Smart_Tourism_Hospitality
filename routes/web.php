@@ -11,5 +11,5 @@ Route::get('/beranda', function () {
 });
 
 Route::get('/history', function () {
-    return view('history/banner');
+    return view('history/sejarah');
 });

@@ -1,4 +1,4 @@
-<section class="w-full bg-background  py-10">
+<section class="w-full bg-background pt-24 pb-10">
     <div class="grid grid-cols-1 lg:grid-cols-6 lg:gap-16 px-10 lg:px-36">
         <div class="col-span-4">
             <div class="lg:pr-32 pb-3">
