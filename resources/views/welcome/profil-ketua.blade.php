@@ -5,8 +5,8 @@
                 <p class="text-lg lg:text-4xl font-semibold">Ketua RA Smart Tourism & Hospitality</p>
             </div>
 
-            <div class="flex items-center justify-center pb-3 lg:hidden">
-                <img src="{{ asset('assets/sementara_bu-ersy.png') }}" alt="" class="w-80">
+            <div class="flex items-center justify-center pb-3 lg:hidden" data-aos="zoom-in">
+                <img src="{{ asset('assets/sementara_bu-ersy.png') }}" alt="" class="w-80" data-aos="zoom-in">
             </div>
 
             <p class="font-paragraf-sth font-semibold text-xl pb-3">Dr. Ersy Ervina, S.Sos., MM. Par</p>
@@ -18,7 +18,7 @@
             </p>
         </div>
 
-        <div class="invisible lg:visible col-span-2 flex items-center justify-center lg:flex">
+        <div class="hidden lg:visible col-span-2 items-center justify-center lg:flex">
             <img src="{{ asset('assets/sementara_bu-ersy.png') }}" alt="" class="w-80">
         </div>
     </div>

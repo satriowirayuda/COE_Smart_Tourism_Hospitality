@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     @include('welcome.banner')
     @include('welcome.profil-ketua')
     @include('welcome.project')
