@@ -1,5 +1,5 @@
-<footer class="w-full bg-[#2593CF] text-white pb-28 px-10 lg:px-28 ">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-8 sm:px-16 lg:px-36 pt-10 gap-10 sm:gap-16">
+<footer class="w-full bg-[#2593CF] text-white pb-28 px-4 lg:px-28 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-10 sm:gap-16">
         <div class="grid-cols-1">
             <p class="text-lg sm:text-xl font-semibold">Center of Excellence Smart Tourism & Hospitality</p>
             <p class="text-xs sm:text-sm pt-4 sm:pt-7 pr-0 sm:pr-8">Jl. Telekomunikasi No.01, Terusan Buahbatu</p>
