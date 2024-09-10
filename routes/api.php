@@ -15,6 +15,7 @@ Route::post('/projects', [ProjectController::class, 'store']);
 Route::put('/projects/{project}', [ProjectController::class, 'update']);
 
 Route::get('/news', [NewsController::class, 'index']);
+Route::get('/news/primary', [NewsController::class, 'showPrimary']);
 Route::post('/news', [NewsController::class, 'store']);
 Route::put('/news/{news}', [NewsController::class, 'update']);
 Route::delete('/news/{news}', [NewsController::class, 'delete']);
