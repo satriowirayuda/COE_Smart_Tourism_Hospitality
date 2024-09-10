@@ -9,13 +9,7 @@
 </head>
 
 <body>
-    <!-- Include Navbar Component -->
-    <x-navigation />
-
-    <!-- Banner Section -->
     @include('welcome.banner')
-
-    <!-- Other Sections -->
     @include('welcome.profil-ketua')
     @include('welcome.project')
     @include('welcome.news')
@@ -26,10 +20,14 @@
         // Change navbar background on scroll
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
-            if (window.scrollY > 100) {
+            const bannerHeight = document.querySelector('section').offsetHeight;
+
+            if (window.scrollY > bannerHeight - 100) {
+                // Saat user melewati banner section
                 navbar.classList.add('bg-white', 'shadow-md', 'text-black');
                 navbar.classList.remove('bg-transparent', 'text-white');
             } else {
+                // Saat user berada di dalam banner section
                 navbar.classList.add('bg-transparent', 'text-white');
                 navbar.classList.remove('bg-white', 'shadow-md', 'text-black');
             }
