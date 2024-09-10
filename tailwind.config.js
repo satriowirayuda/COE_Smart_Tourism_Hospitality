@@ -14,7 +14,8 @@ export default {
       colors: {
         "background": "#EEEEEE",
         "biru-sth": "#2593CF",
-        "putih-sth": "#FFFFFF"
+        "putih-sth": "#FFFFFF",
+        "pink-sth": "#EC018C"
       },
       fontSize: {
         "size-24": "text-xl"

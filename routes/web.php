@@ -11,5 +11,9 @@ Route::get('/beranda', function () {
 });
 
 Route::get('/history', function () {
-    return view('history/visi-misi');
+    return view('history/sejarah-page');
+});
+
+Route::get('/member', function () {
+    return view('member/anggota-page');
 });

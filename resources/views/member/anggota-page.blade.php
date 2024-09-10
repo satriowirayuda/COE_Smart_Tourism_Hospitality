@@ -8,10 +8,8 @@
 </head>
 <body>
 
-@include('history.banner')
-@include('history.sejarah')
-@include('history.visi-misi')
-<x-footer></x-footer>
-    
+    @include('member.banner')
+    @include('member.opening')
+    <x-footer></x-footer>
 </body>
 </html>
