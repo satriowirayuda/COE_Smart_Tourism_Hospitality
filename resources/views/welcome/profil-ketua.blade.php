@@ -24,10 +24,10 @@
     </div>
 
     <div class="px-10 lg:px-36 py-10 flex justify-center">
-        <div class="w-full max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-14 lg:pt-20">
+        <div class="w-[512px]] max-[512px]-screen-lg mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 lg:pt-20">
             <!-- Inovasi -->
             <div class="relative group flex justify-center">
-                <img src="{{ asset('assets/aktivitas.png') }}" alt="Inovasi"
+                <img src="{{ asset('assets/inovasi.png') }}" alt="Inovasi"
                     class="w-[512px] h-auto object-cover shadow-2xl">
                 <div
                     class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#2593CF] text-white italic font-semibold flex justify-center items-center shadow-2xl">
@@ -37,7 +37,7 @@
             </div>
             <!-- Bisnis -->
             <div class="relative group flex justify-center">
-                <img src="{{ asset('assets/aktivitas.png') }}" alt="Bisnis"
+                <img src="{{ asset('assets/bisnis.png') }}" alt="Bisnis"
                     class="w-[512px] h-auto object-cover shadow-2xl">
                 <div
                     class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#E20A91] text-white italic font-semibold flex justify-center items-center shadow-2xl">
@@ -48,7 +48,7 @@
 
             <!-- Riset dan Publikasi -->
             <div class="relative group flex justify-center">
-                <img src="{{ asset('assets/aktivitas.png') }}" alt="Riset dan Publikasi"
+                <img src="{{ asset('assets/riset.png') }}" alt="Riset dan Publikasi"
                     class="w-[512px] h-auto object-cover shadow-2xl">
                 <div
                     class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#F6A11F] text-white italic font-semibold flex justify-center items-center shadow-2xl">
@@ -59,7 +59,7 @@
 
             <!-- Pengabdian Masyarakat -->
             <div class="relative group flex justify-center">
-                <img src="{{ asset('assets/aktivitas.png') }}" alt="Pengabdian Masyarakat"
+                <img src="{{ asset('assets/pengabdian-masyarakat.png') }}" alt="Pengabdian Masyarakat"
                     class="w-[512px] h-auto object-cover shadow-2xl">
                 <div
                     class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#21A652] text-white italic font-semibold flex justify-center items-center shadow-2xl">

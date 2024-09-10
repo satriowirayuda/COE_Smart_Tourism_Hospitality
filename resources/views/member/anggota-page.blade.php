@@ -10,6 +10,7 @@
 
     @include('member.banner')
     @include('member.opening')
+    @include('member.tim')
     <x-footer></x-footer>
 </body>
 </html>
