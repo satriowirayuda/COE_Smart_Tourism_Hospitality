@@ -10,10 +10,10 @@ Route::get('/beranda', function () {
     return view('beranda');
 });
 
-Route::get('/history', function () {
-    return view('history/sejarah-page');
+Route::get('/sejarah', function () {
+    return view('history.sejarah-page');
 });
 
-Route::get('/member', function () {
-    return view('member/anggota-page');
+Route::get('/anggota', function () {
+    return view('member.anggota-page');
 });
