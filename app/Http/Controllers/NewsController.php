@@ -15,6 +15,12 @@ class NewsController extends Controller
         return NewsResource::collection($news);
     }
 
+    public function showPrimary()
+    {
+        $news = News::where('is_primary', true)->get();
+        return NewsResource::collection($news);
+    }
+
     public function store(Request $request)
     {
         $validated = $request->validate([
