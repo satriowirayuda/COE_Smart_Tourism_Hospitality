@@ -1,4 +1,4 @@
-<section class="w-full bg-background pt-24 pb-10">
+<section class="w-full bg-background pt-24 pb-10 m-auto">
     <div class="grid grid-cols-1 lg:grid-cols-6 lg:gap-16 px-10 lg:px-36">
         <div class="col-span-4">
             <div class="lg:pr-32 pb-3">
@@ -59,7 +59,7 @@
 
             <!-- Pengabdian Masyarakat -->
             <div class="relative group flex justify-center">
-                <img src="{{ asset('assets/pengabdian-masyarakat.png') }}" alt="Pengabdian Masyarakat"
+                <img src="{{ asset('assets/pengmas.png') }}" alt="Pengabdian Masyarakat"
                     class="w-[512px] h-auto object-cover shadow-2xl">
                 <div
                     class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#21A652] text-white italic font-semibold flex justify-center items-center shadow-2xl">
@@ -69,8 +69,5 @@
             </div>
         </div>
     </div>
-
-
-
 
 </section>
