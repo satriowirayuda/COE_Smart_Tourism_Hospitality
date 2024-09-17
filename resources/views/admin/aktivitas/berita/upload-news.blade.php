@@ -26,24 +26,24 @@
                 <h2 class="font-semibold text-2xl">Manajemen Tambahan Berita</h2>
                 <p>Isi konten untuk tambah berita</p>
 
-                <form action="/" method="POST" enctype="multipart/form-data" class="pt-10">
+                <form action={{ route('upload_news') }} method="POST" enctype="multipart/form-data" class="pt-10">
                     <div class="flex justify-between">
                         <!-- Bagian untuk input teks -->
                         <div class="flex-1 space-y-4">
                             <!-- Judul Berita -->
                             <div class="mb-4">
-                                <label for="judul" class="block text-sm font-medium text-gray-700">Judul
+                                <label for="title" class="block text-sm font-medium text-gray-700">Judul
                                     Berita</label>
-                                <input type="text" id="judul" name="judul"
+                                <input type="text" id="title" name="title"
                                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
                                     required>
                             </div>
 
                             <!-- Deskripsi Berita -->
                             <div class="mb-4">
-                                <label for="deskripsi" class="block text-sm font-medium text-gray-700">Deskripsi
+                                <label for="description" class="block text-sm font-medium text-gray-700">Deskripsi
                                     Berita</label>
-                                <textarea id="deskripsi" name="deskripsi" rows="4"
+                                <textarea id="description" name="description" rows="4"
                                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
                                     required></textarea>
                             </div>
@@ -59,21 +59,21 @@
 
                             <!-- Tanggal Berita -->
                             <div class="mb-4">
-                                <label for="tanggal" class="block text-sm font-medium text-gray-700">Tanggal
+                                <label for="news_date" class="block text-sm font-medium text-gray-700">Tanggal
                                     Berita</label>
-                                <input type="date" id="tanggal" name="tanggal"
+                                <input type="date" id="news_date" name="news_date"
                                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm"
                                     required>
                             </div>
 
                             <!-- Kategori Berita (Dropdown) -->
                             <div class="mb-4">
-                                <label for="kategori" class="block text-sm font-medium text-gray-700">Kategori
+                                <label for="category" class="block text-sm font-medium text-gray-700">Katergori
                                     Berita</label>
-                                <select id="kategori" name="kategori"
+                                <select id="category" name="category"
                                     class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
-                                    <option value="artikel">Artikel</option>
-                                    <option value="penghargaan">Penghargaan</option>
+                                    <option value="a">Artikel</option>
+                                    <option value="p">Penghargaan</option>
                                 </select>
                             </div>
 
@@ -82,12 +82,12 @@
                                 <label class="block text-sm font-medium text-gray-700">Berita Utama</label>
                                 <div class="mt-2">
                                     <label class="inline-flex items-center">
-                                        <input type="radio" name="berita_utama" value="yes"
+                                        <input type="radio" name="is_primary" value="true"
                                             class="form-radio h-4 w-4 text-amber-500 border-gray-300" required>
                                         <span class="ml-2">Ya</span>
                                     </label>
                                     <label class="inline-flex items-center ml-6">
-                                        <input type="radio" name="berita_utama" value="no"
+                                        <input type="radio" name="is_primary" value="false"
                                             class="form-radio h-4 w-4 text-amber-500 border-gray-300">
                                         <span class="ml-2">Tidak</span>
                                     </label>
@@ -98,16 +98,15 @@
                         <!-- Bagian untuk input gambar (dokumentasi berita) -->
                         <div class="flex-none self-start pl-10">
                             <div class="mb-4">
-                                <label for="dokumentasi" class="block text-sm font-medium text-gray-700">
+                                <label for="image" class="block text-sm font-medium text-gray-700">
                                     Dokumentasi Berita
                                 </label>
                                 <div>
-                                    <label for="dokumentasi"
+                                    <label for="image"
                                         class="inline-block cursor-pointer bg-cyan-300 text-white py-16 px-36 rounded-md hover:bg-cyan-400">
                                         ➕
                                     </label>
-                                    <input type="file" id="dokumentasi" name="dokumentasi" accept="image/*"
-                                        class="hidden">
+                                    <input type="file" id="image" name="image" accept="image/*" class="hidden">
                                 </div>
                             </div>
                         </div>
