@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ProjectController;
@@ -17,9 +18,10 @@ Route::put('/projects/{project}', [ProjectController::class, 'update']);
 
 Route::get('/news', [NewsController::class, 'index']);
 Route::get('/news/primary', [NewsController::class, 'showPrimary']);
-Route::post('/news', [NewsController::class, 'store']);
-Route::put('/news/{news}', [NewsController::class, 'update']);
-Route::delete('/news/{news}', [NewsController::class, 'delete']);
+Route::get('/news/{news}', [NewsController::class, 'show']);
+Route::post('/news', [NewsController::class, 'store'])->name('upload_news');
+Route::put('/news/{news}', [NewsController::class, 'update'])->name('update_news');
+Route::delete('/news/{news}', [NewsController::class, 'delete'])->name('delete_news');
 
 Route::get('/events', [EventController::class, 'index']);
 Route::post('/events', [EventController::class, 'store']);
