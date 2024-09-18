@@ -22,7 +22,7 @@
             <x-sidebar />
 
             <!-- Konten Utama di Sebelah Sidebar -->
-            <div class="flex-1 pl-10 pr-20 py-10">
+            <div class="px-10 py-10 w-full">
                 <h2 class="font-semibold text-2xl">Manajemen Konten Aktivitas</h2>
                 <p>pilih konten untuk di-edit</p>
 

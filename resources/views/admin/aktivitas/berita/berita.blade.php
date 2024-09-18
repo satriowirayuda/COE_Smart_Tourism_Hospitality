@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daftar Berita</title>
     @vite('resources/css/app.css')
 </head>
 
@@ -22,8 +22,8 @@
             <x-sidebar />
 
             <!-- Konten Utama di Sebelah Sidebar -->
-            <div class="flex-1 p-10 text-gray-800 overflow-auto">
-                <h2 class="font-semibold text-2xl">Manajemen Konten Berita</h2>
+            <div class="px-10 py-10 w-full">
+                <h2 class="font-semibold text-2xl">Manajemen Konten berita</h2>
                 <p>Pilih konten untuk di-edit</p>
 
                 <div class="mt-6">
@@ -31,15 +31,68 @@
                         Tambah Berita
                     </a>
                 </div>
+
+                <!-- Card Wrapper -->
+                <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+                    <!-- Cards akan ditambahkan di sini oleh JavaScript -->
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        async function fetchNews() {
+            try {
+                const response = await fetch('http://localhost:8000/api/news');
+                const newsData = await response.json();
+                const newsArray = newsData.data;
+                const newsContainer = document.getElementById('news-container');
+
+                newsContainer.innerHTML = '';
+
+                if (Array.isArray(newsArray)) {
+                    newsArray.forEach(news => {
+                        const formattedDate = new Date(news.news_date).toLocaleDateString('id-ID', {
+                            day: '2-digit',
+                            month: 'long',
+                            year: 'numeric'
+                        });
+
+                        // Menyusun URL gambar
+                        const imageUrl = `http://localhost:8000/storage/${news.image}`;
+                        console.log('Image URL:', imageUrl); // Debug: log URL gambar
+
+                        const newsCard = document.createElement('div');
+                        newsCard.className =
+                            'bg-white rounded-xl border-2 border-grey-300 p-4 flex flex-col mb-4';
+
+                        newsCard.innerHTML = `
+                        <div class = "flex">
+                            <h3 class="text-sm font-semibold">${news.title}</h3>
+                            <img src="${imageUrl}" alt="${news.title}" class="w-36 h-20 object-cover rounded-lg mb-4">
+                            </div>
+                            <p class="text-sm text-gray-500 mb-2">${formattedDate}</p>
+                            <p class="text-sm text-gray-500 mb-2">${news.category === ('a') ? 'Artikel' : 'Penghargaan'}</p>
+                            <div class="flex space-x-2 ml-auto">
+                                <button class="bg-white border-2 border-red-500  text-red-500 px-4 py-2 rounded-full hover:bg-red-600 hover:text-white">Hapus</button>
+                                <button class="bg-white border-2 border-green-500  text-green-500 px-6 py-2 rounded-full hover:bg-green-600 hover:text-white">Edit</button>
+                            </div>
+                        `;
+
+                        newsContainer.appendChild(newsCard);
+                    });
+                } else {
+                    console.error('Data yang diterima bukan array:', newsArray);
+                }
+
+            } catch (error) {
+                console.error('Error fetching news:', error);
+            }
+        }
+
+        window.onload = fetchNews;
+    </script>
+
 </body>
-
-
-
-
-
-
 
 </html>

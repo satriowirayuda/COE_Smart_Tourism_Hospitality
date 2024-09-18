@@ -24,7 +24,7 @@
             <x-sidebar />
 
             <!-- Konten Utama di Sebelah Sidebar -->
-            <div class="flex-1 p-10 text-gray-800 overflow-auto">
+            <div class="px-10 py-10 w-full">
                 <h2 class="font-semibold text-2xl">Konten Project Terkini</h2>
                 <p>Pilih konten untuk di-edit</p>
             </div>
