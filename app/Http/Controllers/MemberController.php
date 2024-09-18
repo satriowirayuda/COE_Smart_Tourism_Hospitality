@@ -15,6 +15,11 @@ class MemberController extends Controller
         return MemberResource::collection($member);
     }
 
+    public function show(Member $member)
+    {
+        return new MemberResource($member);
+    }
+
     public function store(Request $request)
     {
 
@@ -24,6 +29,11 @@ class MemberController extends Controller
             '*.status' => 'required',
             '*.image' => 'required'
         ]);
+
+        foreach ($request->file('*.image') as $key => $image) {
+            $path = $image->store('images/member', 'public');
+            $validated[$key]['image'] = $path;
+        }
 
         foreach ($validated as $data) {
             Member::create($data);
@@ -40,6 +50,11 @@ class MemberController extends Controller
             'status' => 'required',
             'image' => 'required'
         ]);
+
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('images/member', 'public');
+            $validated['image'] = $path;
+        }
 
         $member->update($validated);
         return new MemberResource($member);
