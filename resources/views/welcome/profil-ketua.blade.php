@@ -1,4 +1,4 @@
-<section class="w-full bg-background pt-24 pb-10 m-auto">
+<section class="w-full bg-background pt-24 pb-10">
     <div class="grid grid-cols-1 lg:grid-cols-6 lg:gap-16 px-10 lg:px-36">
         <div class="col-span-4">
             <div class="lg:pr-32 pb-3">
@@ -23,8 +23,10 @@
         </div>
     </div>
 
-    <div class="px-10 lg:px-36 py-10 flex justify-center">
-        <div class="w-[512px]] max-[512px]-screen-lg mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 lg:pt-20">
+</section>
+
+<div class="lg:px-36 py-10 flex">
+        <div class="max-[512px]-screen-lg mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20 lg:pt-20">
             <!-- Inovasi -->
             <div class="relative group flex justify-center">
                 <img src="{{ asset('assets/inovasi.png') }}" alt="Inovasi"
@@ -69,5 +71,3 @@
             </div>
         </div>
     </div>
-
-</section>

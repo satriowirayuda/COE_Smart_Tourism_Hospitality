@@ -17,3 +17,7 @@ Route::get('/sejarah', function () {
 Route::get('/anggota', function () {
     return view('member.anggota-page');
 });
+
+Route::get('/activity', function () {
+    return view('activity.aktivitas-page');
+});
