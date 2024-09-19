@@ -18,6 +18,10 @@ Route::get('/anggota', function () {
     return view('member.anggota-page');
 });
 
+Route::get('/activity', function () {
+    return view('activity.aktivitas-page');
+});
+
 Route::get('/login', function () {
     return view('admin.login');
 })->middleware('guest')->name('login');

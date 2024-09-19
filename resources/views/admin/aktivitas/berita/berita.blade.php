@@ -43,7 +43,7 @@
     <script>
         async function fetchNews() {
             try {
-                const response = await fetch('http://localhost:8000/api/news');
+                const response = await fetch('/api/news');
                 const newsData = await response.json();
                 const newsArray = newsData.data;
                 const newsContainer = document.getElementById('news-container');
@@ -59,7 +59,7 @@
                         });
 
                         // Menyusun URL gambar
-                        const imageUrl = `http://localhost:8000/storage/${news.image}`;
+                        const imageUrl = `/storage/${news.image}`;
                         console.log('Image URL:', imageUrl); // Debug: log URL gambar
 
                         const newsCard = document.createElement('div');
@@ -67,9 +67,13 @@
                             'bg-white rounded-xl border-2 border-grey-300 p-4 flex flex-col mb-4';
 
                         newsCard.innerHTML = `
-                        <div class = "flex">
-                            <h3 class="text-sm font-semibold">${news.title}</h3>
-                            <img src="${imageUrl}" alt="${news.title}" class="w-36 h-20 object-cover rounded-lg mb-4">
+                            <div class="flex">
+                                <div class="w-[65%] pr-2">
+                                    <h3 class="text-xs font-semibold text-justify">${news.title}</h3>
+                                </div>
+                                <div class="w-[35%] ml-auto">
+                                    <img src="${imageUrl}" alt="${news.title}" class="w-full h-20 object-cover rounded-lg mb-4">
+                                </div>
                             </div>
                             <p class="text-sm text-gray-500 mb-2">${formattedDate}</p>
                             <p class="text-sm text-gray-500 mb-2">${news.category === ('a') ? 'Artikel' : 'Penghargaan'}</p>
