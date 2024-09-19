@@ -35,11 +35,12 @@
         <!-- Login Form -->
         <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
 
-        <form action="/login" method="POST">
-            <!-- Email Input -->
+        <form action="{{ url('/api/login') }}" method="POST">
+            @csrf
+            <!-- Username Input -->
             <div class="mb-4 px-96">
-                <label for="email" class="block text-lg font-medium text-gray-700">Username</label>
-                <input type="email" id="email" name="email"
+                <label for="username" class="block text-lg font-medium text-gray-700">Username</label>
+                <input type="text" id="username" name="username"
                     class="w-full px-4 py-2 border border-gray-300 bg-sky-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
                     required>
             </div>

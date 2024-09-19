@@ -20,26 +20,27 @@ Route::get('/anggota', function () {
 
 Route::get('/login', function () {
     return view('admin.login');
-});
+})->middleware('guest')->name('login');
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-});
+// Memastikan bahwa hanya user yang sudah login yang bisa mengakses route ini
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
 
+    Route::get('/project', function () {
+        return view('admin.project.project-terkini');
+    });
 
-Route::get('/project', function () {
-    return view('admin.project.project-terkini');
-});
+    Route::get('/aktivitas', function () {
+        return view('admin.aktivitas.aktivitas');
+    });
 
-Route::get('/aktivitas', function () {
-    return view('admin.aktivitas.aktivitas');
-});
+    Route::get('/news', function () {
+        return view('admin.aktivitas.berita.berita');
+    });
 
-
-Route::get('/news', function () {
-    return view('admin.aktivitas.berita.berita');
-});
-
-Route::get('/upload-news', function () {
-    return view('admin.aktivitas.berita.upload-news');
+    Route::get('/upload-news', function () {
+        return view('admin.aktivitas.berita.upload-news');
+    });
 });
