@@ -18,11 +18,24 @@ Route::get('/anggota', function () {
     return view('member.anggota-page');
 });
 
+Route::get('/activity', function () {
+    return view('activity.aktivitas-page');
+});
+
 // Login
 Route::get('/login', function () {
     return view('admin.login');
-});
+})->middleware('guest')->name('login');
 
+// Memastikan bahwa hanya user yang sudah login yang bisa mengakses route ini
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    Route::get('/project', function () {
+        return view('admin.project.project-terkini');
+    });
 // Dashboard
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -33,6 +46,13 @@ Route::get('/project', function () {
     return view('admin.project.project-terkini');
 });
 
+    Route::get('/aktivitas', function () {
+        return view('admin.aktivitas.aktivitas');
+    });
+
+    Route::get('/news', function () {
+        return view('admin.aktivitas.berita.berita');
+    });
 // Aktivitas
 Route::get('/aktivitas', function () {
     return view('admin.aktivitas.aktivitas');
@@ -89,4 +109,8 @@ Route::get('/upload-pelatihan', function () {
 });
 Route::get('/upload-kedai', function () {
     return view('admin.aktivitas.bisnis.upload-kedai');
+});
+    Route::get('/upload-news', function () {
+        return view('admin.aktivitas.berita.upload-news');
+    });
 });
