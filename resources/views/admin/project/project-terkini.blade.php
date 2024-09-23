@@ -27,6 +27,13 @@
             <div class="px-10 py-10 w-full">
                 <h2 class="font-semibold text-2xl">Konten Project Terkini</h2>
                 <p>Pilih konten untuk di-edit</p>
+
+                <div class="mt-6">
+                    <a href="/upload-project"
+                        class="bg-cyan-300 hover:bg-cyan-200 text-white font-bold py-2 px-4 rounded">
+                        Tambah Proyek
+                    </a>
+                </div>
             </div>
         </div>
     </div>

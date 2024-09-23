@@ -36,6 +36,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/project', function () {
         return view('admin.project.project-terkini');
     });
+    Route::get('/upload-project', function () {
+        return view('admin.project.upload-project');
+    });
 
 
     Route::get('/aktivitas', function () {
