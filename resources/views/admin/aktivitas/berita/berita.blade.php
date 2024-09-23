@@ -23,7 +23,7 @@
 
             <!-- Konten Utama di Sebelah Sidebar -->
             <div class="px-10 py-10 w-full">
-                <h2 class="font-semibold text-2xl">Manajemen Konten berita</h2>
+                <h2 class="font-semibold text-2xl">Manajemen Konten Berita</h2>
                 <p>Pilih konten untuk di-edit</p>
 
                 <div class="mt-6">

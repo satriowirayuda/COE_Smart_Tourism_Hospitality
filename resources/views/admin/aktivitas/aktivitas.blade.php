@@ -43,7 +43,7 @@
                     </a>
 
                     <!-- Card 2 -->
-                    <a href="/project" class="block">
+                    <a href="/riset-publikasi" class="block">
                         <div class="bg-white shadow-md rounded-lg overflow-hidden items-center">
                             <div class="flex bg-white items-center justify-center h-36 w-full">
                                 <img src="{{ asset('assets/riset-publikasi.svg') }}" alt="Card Image"
@@ -58,7 +58,7 @@
                     </a>
 
                     <!-- Card 3 -->
-                    <a href="/project" class="block">
+                    <a href="/inovasi" class="block">
                         <div class="bg-white shadow-md rounded-lg overflow-hidden items-center">
                             <div class="flex bg-white items-center justify-center h-36 w-full">
                                 <img src="{{ asset('assets/inovasi.svg') }}" alt="Card Image" class="object-contain">
@@ -71,7 +71,7 @@
                     </a>
 
                     <!-- Card 4 -->
-                    <a href="/project" class="block">
+                    <a href="/bisnis" class="block">
                         <div class="bg-white shadow-md rounded-lg overflow-hidden items-center">
                             <div class="flex bg-white items-center justify-center h-36 w-full">
                                 <img src="{{ asset('assets/bisnis.svg') }}" alt="Card Image" class="object-contain">

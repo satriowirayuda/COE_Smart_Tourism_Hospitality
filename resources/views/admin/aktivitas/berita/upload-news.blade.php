@@ -106,8 +106,11 @@
                                         class="inline-block cursor-pointer bg-cyan-300 text-white py-16 px-36 rounded-md hover:bg-cyan-400">
                                         ➕
                                     </label>
-                                    <input type="file" id="image" name="image" accept="image/*" class="hidden">
+                                    <input type="file" id="image" name="image" accept="image/*" class="hidden"
+                                        onchange="displayFileName()">
                                 </div>
+                                <div id="file-name" class="text-sm text-gray-500 mt-2"></div>
+                                <!-- Tempat untuk menampilkan nama file -->
                             </div>
                         </div>
 
@@ -125,6 +128,13 @@
         </div>
     </div>
 </body>
-
+<script>
+    function displayFileName() {
+        const input = document.getElementById('image');
+        const fileNameDisplay = document.getElementById('file-name');
+        const fileName = input.files[0] ? input.files[0].name : 'Tidak ada file yang dipilih';
+        fileNameDisplay.textContent = fileName;
+    }
+</script>
 
 </html>
