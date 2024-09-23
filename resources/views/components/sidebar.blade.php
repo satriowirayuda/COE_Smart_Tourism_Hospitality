@@ -6,7 +6,7 @@
         <ul class="space-y-2">
             <li>
                 <a href="/project"
-                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('project') ? 'bg-red-500' : '' }}">
+                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('project') ? 'bg-red-500 ' : '' }}">
                     Proyek Terkini
                 </a>
             </li>
@@ -14,12 +14,12 @@
             </li>
             <li>
                 <a href="/aktivitas"
-                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('aktivitas', 'news', 'upload-news') ? 'bg-red-500' : '' }}">
+                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('aktivitas', 'news', 'upload-news', 'riset-publikasi', 'innovillage', 'jurnal', 'upload-innovillage', 'upload-jurnal', 'bisnis', 'kedai', 'pelatihan', 'upload-kedai', 'upload-pelatihan', 'inovasi') ? 'bg-red-500' : '' }}">
                     Aktivitas
                 </a>
             </li>
             <li>
-                <a href="#" class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200">
+                <a href="" class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200">
                     Anggota
                 </a>
             </li>
