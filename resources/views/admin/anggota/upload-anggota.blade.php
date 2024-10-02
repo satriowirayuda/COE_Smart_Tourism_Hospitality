@@ -82,11 +82,10 @@
                 // Create new div for team member (not form)
                 const newTeamDiv = document.createElement('div');
                 newTeamDiv.classList.add('team-item', 'flex', 'flex-col', 'space-y-4'); // Flex item for layout
-
+ 
                 // HTML for new team member
                 newTeamDiv.innerHTML = `
-                                                <label for="image" class="block text-sm font-medium text-gray-700">Tim
-                                    Innovillage</label>
+                <label for="image" class="block text-sm font-medium text-gray-700">Tim Innovillage</label>
                 <div class="flex">
                     <label for="image${teamCount}"
                         class="inline-block cursor-pointer bg-white border-2 border-gray-300 h-24 w-36 py-8 px-14 rounded-md hover:bg-slate-100 bg-cover bg-center">
@@ -113,7 +112,7 @@
 
                 // Adjust grid layout if more than 2 forms
                 if (teamCount === 3) {
-                    teamContainer.classList.add('md:grid-cols-3');
+                    teamContainer.classList.add('md:grid-cols-2');
                 }
             } else {
                 alert('Maksimal 3 anggota');

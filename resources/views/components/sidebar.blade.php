@@ -19,12 +19,14 @@
                 </a>
             </li>
             <li>
-                <a href="" class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200">
+                <a href="/member"
+                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('member', 'upload-member') ? 'bg-red-500 ' : '' }}">
                     Anggota
                 </a>
             </li>
             <li>
-                <a href="#" class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200">
+                <a href="/timeline"
+                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('timeline', 'upload-timeline') ? 'bg-red-500 ' : '' }}">
                     Timeline
                 </a>
             </li>

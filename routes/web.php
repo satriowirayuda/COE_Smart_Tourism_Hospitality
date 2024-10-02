@@ -40,7 +40,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
         return view('admin.project.upload-project');
     });
 
-
     Route::get('/aktivitas', function () {
         return view('admin.aktivitas.aktivitas');
     });
@@ -98,5 +97,21 @@ Route::middleware(['auth:sanctum'])->group(function () {
     });
     Route::get('/upload-news', function () {
         return view('admin.aktivitas.berita.upload-news');
+    });
+
+    // Anggota
+    Route::get('/member', function () {
+        return view('admin.anggota.anggota');
+    });
+    Route::get('/upload-member', function () {
+        return view('admin.anggota.upload-anggota');
+    });
+
+    // Timeline
+    Route::get('/timeline', function () {
+        return view('admin.timeline.timeline');
+    });
+    Route::get('/upload-timeline', function () {
+        return view('admin.timeline.upload-timeline');
     });
 });
