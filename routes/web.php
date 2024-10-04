@@ -114,4 +114,25 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/upload-timeline', function () {
         return view('admin.timeline.upload-timeline');
     });
+
+    // Program
+    Route::get('/program', function () {
+        return view('admin.program.program');
+    });
+
+    // a. Magang
+    Route::get('/mbkm-magang', function () {
+        return view('admin.program.magang.magang');
+    });
+    Route::get('/upload-mbkm-magang', function () {
+        return view('admin.program.magang.upload-magang');
+    });
+
+    // b. Kerja sama
+    Route::get('/kerja-sama', function () {
+        return view('admin.program.kerja-sama.kerja-sama');
+    });
+    Route::get('/upload-kerja-sama', function () {
+        return view('admin.program.kerja-sama.upload-kerja-sama');
+    });
 });
