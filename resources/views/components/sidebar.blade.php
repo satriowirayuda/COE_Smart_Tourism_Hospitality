@@ -6,7 +6,7 @@
         <ul class="space-y-2">
             <li>
                 <a href="/project"
-                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('project') ? 'bg-red-500 ' : '' }}">
+                    class="block py-2.5 px-4  rounded hover:bg-gray-200 transition duration-200 {{ request()->is('project') ? 'bg-kuning-bg ' : '' }}">
                     Proyek Terkini
                 </a>
             </li>
@@ -14,24 +14,25 @@
             </li>
             <li>
                 <a href="/aktivitas"
-                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('aktivitas', 'news', 'upload-news', 'riset-publikasi', 'innovillage', 'jurnal', 'upload-innovillage', 'upload-jurnal', 'bisnis', 'kedai', 'pelatihan', 'upload-kedai', 'upload-pelatihan', 'inovasi') ? 'bg-red-500' : '' }}">
+                    class="block py-2.5 px-4 rounded hover:bg-gray-200 transition duration-200 {{ request()->is('aktivitas', 'news', 'upload-news', 'riset-publikasi', 'innovillage', 'jurnal', 'upload-innovillage', 'upload-jurnal', 'bisnis', 'kedai', 'pelatihan', 'upload-kedai', 'upload-pelatihan', 'inovasi', 'upload-inovasi') ? 'bg-kuning-bg' : '' }}">
                     Aktivitas
                 </a>
             </li>
             <li>
                 <a href="/member"
-                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('member', 'upload-member') ? 'bg-red-500 ' : '' }}">
+                    class="block py-2.5 px-4 rounded hover:bg-gray-200 transition duration-200 {{ request()->is('member', 'upload-member') ? 'bg-kuning-bg ' : '' }}">
                     Anggota
                 </a>
             </li>
             <li>
                 <a href="/timeline"
-                    class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200 {{ request()->is('timeline', 'upload-timeline') ? 'bg-red-500 ' : '' }}">
+                    class="block py-2.5 px-4 rounded hover:bg-gray-200 transition duration-200 {{ request()->is('timeline', 'upload-timeline') ? 'bg-kuning-bg ' : '' }}">
                     Timeline
                 </a>
             </li>
             <li>
-                <a href="#" class="block py-2.5 px-4 rounded hover:bg-amber-500 transition duration-200">
+                <a href="/program"
+                    class="block py-2.5 px-4 rounded hover:bg-gray-200 transition duration-200 {{ request()->is('program', 'mbkm-magang', 'kerja-sama', 'upload-mbkm-magang', 'upload-kerja-sama') ? 'bg-kuning-bg ' : '' }}">
                     Program
                 </a>
             </li>
