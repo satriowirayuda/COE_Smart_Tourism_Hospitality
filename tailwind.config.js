@@ -22,7 +22,19 @@ export default {
                 "size-24": "text-xl",
             },
         },
-        
+        backgroundColor: (theme) => ({
+            ...theme("colors"),
+            purplewhite: "#F4F4FA",
+            meta: "#0F172A",
+            "ungu-footer": "#472091",
+            "ungu-font": "#452090",
+            "ungu-gradient": "#873091",
+            "biru-gradient": "#04509B",
+            "meta-pudar": "#1A2132",
+            "biru-ungu": "#E8F0FE",
+            "kuning-bg": "#F9A21C",
+            "biru-cyan": "#AAF0F7",
+        }),
     },
     plugins: [],
 };
