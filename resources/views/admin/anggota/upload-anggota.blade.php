@@ -10,11 +10,7 @@
 
 <body class="bg-blue-400 min-h-screen flex justify-center">
     <div class="w-full bg-white rounded-2xl my-4 mx-4 shadow-lg flex flex-col">
-        <div class="flex items-center pl-10 py-5">
-            <img src="{{ asset('assets/logo.png') }}" alt="Logo" class="w-8 h-10 object-cover">
-            <h2 class="pl-6 font-semibold text-xl">Halaman Admin</h2>
-        </div>
-        <hr class="border-grey-300 border" />
+        <x-header />
 
         <!-- Wrapper untuk sidebar dan konten utama -->
         <div class="flex flex-1 overflow-hidden">
@@ -60,8 +56,10 @@
                     <!-- Submit Button -->
                     <div class="mt-6">
                         <button type="submit"
-                            class="bg-cyan-300 text-white py-2 px-12 font-semibold rounded-md hover:bg-cyan-400 transition duration-200">
-                            Post Anggota
+                            class="px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-cyan-300 text-white inline-block">
+                            <span
+                                class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-cyan-50 group-hover:h-full opacity-90"></span>
+                            <span class="relative group-hover:text-cyan-300">Submit Anggota</span>
                         </button>
                     </div>
                 </form>
@@ -82,7 +80,7 @@
                 // Create new div for team member (not form)
                 const newTeamDiv = document.createElement('div');
                 newTeamDiv.classList.add('team-item', 'flex', 'flex-col', 'space-y-4'); // Flex item for layout
- 
+
                 // HTML for new team member
                 newTeamDiv.innerHTML = `
                 <label for="image" class="block text-sm font-medium text-gray-700">Tim Innovillage</label>
