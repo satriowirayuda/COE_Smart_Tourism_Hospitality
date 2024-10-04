@@ -10,12 +10,7 @@
 
 <body class="bg-blue-400 min-h-screen flex justify-center">
     <div class="w-full bg-white rounded-2xl my-4 mx-4 shadow-lg flex flex-col">
-        <div class="flex items-center pl-10 py-5">
-            <img src="{{ asset('assets/logo.png') }}" alt="Logo" class="w-8 h-10 object-cover">
-            <h2 class="pl-6 font-semibold text-xl">Halaman Admin</h2>
-        </div>
-        <hr class="border-grey-300 border" />
-
+        <x-header />
         <!-- Wrapper untuk sidebar dan konten utama -->
         <div class="flex flex-1 overflow-hidden">
             <!-- Panggil Sidebar -->
@@ -26,7 +21,7 @@
                 <h2 class="font-semibold text-2xl">Manajemen Tambahan Pelatihan</h2>
                 <p>Isi konten untuk tambah pelatihan</p>
 
-                <form action={{ route('upload_training') }} method="POST" enctype="multipart/form-data" class="pt-10">
+                <form action="#" method="POST" enctype="multipart/form-data" class="pt-10">
                     <div class="flex justify-between">
                         <!-- Bagian untuk input teks -->
                         <div class="flex-1 space-y-4">
@@ -88,18 +83,21 @@
                         </div>
 
                         <!-- Bagian untuk input gambar pelatihan -->
-                        <div class="flex-none self-start pl-10">
+                        <div class="flex-none self-start pl-10 w-[30%]">
                             <div class="mb-4">
                                 <label for="image" class="block text-sm font-medium text-gray-700">
                                     Foto Pelatihan
                                 </label>
-                                <div>
+                                <div
+                                    class="relative w-full h-48 bg-cyan-300 text-white rounded-md flex items-center justify-center hover:bg-cyan-400">
                                     <label for="image"
-                                        class="inline-block cursor-pointer bg-cyan-300 text-white py-16 px-36 rounded-md hover:bg-cyan-400">
+                                        class="cursor-pointer absolute inset-0 flex items-center justify-center">
                                         ➕
                                     </label>
                                     <input type="file" id="image" name="image" accept="image/*" class="hidden"
-                                        onchange="displayFileName()">
+                                        onchange="displayImageInLabel(this)">
+                                    <img id="preview" src="" alt="Preview Gambar"
+                                        class="absolute inset-0 w-full h-full object-cover hidden">
                                 </div>
                                 <div id="file-name" class="text-sm text-gray-500 mt-2"></div>
                                 <!-- Tempat untuk menampilkan nama file -->
@@ -111,8 +109,10 @@
                     <!-- Submit Button -->
                     <div class="mt-6">
                         <button type="submit"
-                            class="bg-cyan-300 text-white py-2 px-4 rounded-md hover:bg-cyan-400 transition duration-200">
-                            Tambah Berita
+                            class="px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-cyan-300 text-white inline-block">
+                            <span
+                                class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-cyan-50 group-hover:h-full opacity-90"></span>
+                            <span class="relative group-hover:text-cyan-300">Submit Pelatihan</span>
                         </button>
                     </div>
                 </form>
@@ -121,11 +121,27 @@
     </div>
 </body>
 <script>
-    function displayFileName() {
-        const input = document.getElementById('image');
-        const fileNameDisplay = document.getElementById('file-name');
-        const fileName = input.files[0] ? input.files[0].name : 'Tidak ada file yang dipilih';
-        fileNameDisplay.textContent = fileName;
+    // Fungsi untuk menampilkan gambar pratinjau di dalam label
+    function displayImageInLabel(input) {
+        const file = input.files[0];
+        const label = input.previousElementSibling;
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                // Terapkan gambar sebagai background pada label
+                label.style.backgroundImage = `url(${e.target.result})`;
+                label.style.backgroundSize = 'cover'; // Gambar akan menutupi area label
+                label.style.backgroundPosition = 'center'; // Gambar akan berada di tengah label
+                label.style.backgroundRepeat = 'no-repeat'; // Gambar tidak akan berulang
+                label.textContent = ''; // Hapus simbol ➕ setelah gambar muncul
+            };
+            reader.readAsDataURL(file);
+        } else {
+            // Jika tidak ada gambar, kembalikan tampilan label ke semula
+            label.style.backgroundImage = '';
+            label.textContent = '➕';
+        }
     }
 </script>
 
