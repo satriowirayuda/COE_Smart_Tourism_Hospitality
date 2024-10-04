@@ -56,7 +56,7 @@
             <!-- Submit Button -->
             <div class="flex justify-center">
                 <button type="submit"
-                    class="w-1/6 bg-amber-400 text-white py-2 rounded-xl hover:bg-blue-600 transition duration-300">
+                    class="w-1/6 bg-amber-500 text-white py-2 rounded-xl hover:bg-gray-300 transition duration-300">
                     Login
                 </button>
             </div>

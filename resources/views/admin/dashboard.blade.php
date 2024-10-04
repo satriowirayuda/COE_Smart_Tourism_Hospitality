@@ -93,15 +93,17 @@
             </a>
 
             <!-- Card 5 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden items-center">
-                <div class="flex bg-white items-center justify-center h-36 w-full">
-                    <img src="{{ asset('assets/program.svg') }}" alt="Card Image" class="object-contain">
-                </div>
-                <div class="p-4 bg-white">
-                    <h3 class="font-semibold text-xl mb-2 text-center text-shadow-xl">Program</h3>
+            <a href="/program" class="block">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden items-center">
+                    <div class="flex bg-white items-center justify-center h-36 w-full">
+                        <img src="{{ asset('assets/program.svg') }}" alt="Card Image" class="object-contain">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-xl mb-2 text-center text-shadow-xl">Program</h3>
 
+                    </div>
                 </div>
-            </div>
+            </a>
 
         </div>
     </div>
