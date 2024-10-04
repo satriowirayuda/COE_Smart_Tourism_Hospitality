@@ -55,21 +55,22 @@
                         </div>
 
                         <!-- Bagian untuk input gambar (poster program) -->
-                        <div class="flex-none self-start pl-10">
+                        <div class="flex-none self-start pl-10 w-[30%]">
                             <div class="mb-4">
                                 <label for="image" class="block text-sm font-medium text-gray-700">
                                     Poster Program
                                 </label>
-                                <div>
+                                <div
+                                    class="relative w-full h-36 bg-cyan-300 text-white rounded-md flex items-center justify-center hover:bg-cyan-400">
                                     <label for="image"
-                                        class="inline-block cursor-pointer bg-cyan-300 text-white py-16 px-36 rounded-md hover:bg-cyan-400">
+                                        class="cursor-pointer absolute inset-0 flex items-center justify-center">
                                         ➕
                                     </label>
                                     <input type="file" id="image" name="image" accept="image/*" class="hidden"
-                                        onchange="displayFileName()">
+                                        onchange="displayImageInLabel(this)">
+                                    <img id="preview" src="" alt="Preview Gambar"
+                                        class="absolute inset-0 w-full h-full object-cover hidden">
                                 </div>
-                                <div id="file-name" class="text-sm text-gray-500 mt-2"></div>
-                                <!-- Tempat untuk menampilkan nama file -->
                             </div>
                         </div>
 
@@ -90,11 +91,27 @@
     </div>
 </body>
 <script>
-    function displayFileName() {
-        const input = document.getElementById('image');
-        const fileNameDisplay = document.getElementById('file-name');
-        const fileName = input.files[0] ? input.files[0].name : 'Tidak ada file yang dipilih';
-        fileNameDisplay.textContent = fileName;
+    // Fungsi untuk menampilkan gambar pratinjau di dalam label
+    function displayImageInLabel(input) {
+        const file = input.files[0];
+        const label = input.previousElementSibling;
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                // Terapkan gambar sebagai background pada label
+                label.style.backgroundImage = `url(${e.target.result})`;
+                label.style.backgroundSize = 'cover'; // Gambar akan menutupi area label
+                label.style.backgroundPosition = 'center'; // Gambar akan berada di tengah label
+                label.style.backgroundRepeat = 'no-repeat'; // Gambar tidak akan berulang
+                label.textContent = ''; // Hapus simbol ➕ setelah gambar muncul
+            };
+            reader.readAsDataURL(file);
+        } else {
+            // Jika tidak ada gambar, kembalikan tampilan label ke semula
+            label.style.backgroundImage = '';
+            label.textContent = '➕';
+        }
     }
 </script>
 
