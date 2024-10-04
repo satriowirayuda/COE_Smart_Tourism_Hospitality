@@ -69,7 +69,7 @@
 
     <script>
         let teamCount = 1; // Initial form count
-        const maxTeams = 3; // Maximum forms
+        const maxTeams = 4; // Maximum forms
         const addTeamBtn = document.getElementById('add-team-btn');
         const teamContainer = document.getElementById('team-container');
 
@@ -109,11 +109,11 @@
                 teamContainer.appendChild(newTeamDiv);
 
                 // Adjust grid layout if more than 2 forms
-                if (teamCount === 3) {
+                if (teamCount === 4) {
                     teamContainer.classList.add('md:grid-cols-2');
                 }
             } else {
-                alert('Maksimal 3 anggota');
+                alert('Maksimal 4 anggota');
             }
         });
 
