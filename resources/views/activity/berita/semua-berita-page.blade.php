@@ -7,8 +7,8 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-[#EEEEEE]">
-    @include('activity.banner')
-    @include('activity.semua')
+    @include('activity.berita.banner')
+    @include('activity.berita.semua')
     <x-footer></x-footer>
 </body>
 </html>

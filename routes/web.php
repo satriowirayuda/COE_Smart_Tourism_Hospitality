@@ -20,9 +20,21 @@ Route::get('/anggota', function () {
 
 Route::get('/activity', function () {
     return view('activity.aktivitas-page');
+Route::get('/berita-semua', function () {
+    return view('activity.berita.semua-berita-page');
+});
+
+
+Route::get('/berita-artikel', function () {
+    return view('activity.berita.artikel-berita-page');
+});
+
+Route::get('/berita-penghargaan', function () {
+    return view('activity.berita.penghargaan-berita-page');
 });
 
 // Login
+
 Route::get('/login', function () {
     return view('admin.login');
 })->middleware('guest')->name('login');
@@ -48,6 +60,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
         return view('admin.aktivitas.berita.berita');
     });
 
+    Route::get('/upload-news', function () {
+        return view('admin.aktivitas.berita.upload-news');
+    });
     Route::get('/upload-news', function () {
         return view('admin.aktivitas.berita.upload-news');
     });
@@ -135,4 +150,5 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/upload-kerja-sama', function () {
         return view('admin.program.kerja-sama.upload-kerja-sama');
     });
+});
 });
