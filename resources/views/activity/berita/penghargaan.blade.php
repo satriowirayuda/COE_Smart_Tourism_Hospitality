@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="flex bg-white rounded-[40px] h-14 mx-[110px] shadow-2xl my-10 pl-20 items-center gap-9 text-sm font-semibold text-black">
-        <a href="#">Semua</a>
+        <a href="{{url('berita/semua')}}">Semua</a>
         <div class="border-r-[1px] border-black h-7"></div>
-        <a href="#">Artikel</a>
+        <a href="{{url('berita/artikel')}}">Artikel</a>
         <div class="border-r-[1px] border-black h-7"></div>
-        <a href="#" class="text-[#025D9F]">Penghargaan</a>
+        <a href="{{url('berita/penghargaan')}}" class="text-[#025D9F]">Penghargaan</a>
     </div>
 
     <section class="mx-[110px] mb-28 space-y-5">

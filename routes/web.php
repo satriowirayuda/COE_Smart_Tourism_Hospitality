@@ -20,18 +20,24 @@ Route::get('/anggota', function () {
 
 Route::get('/activity', function () {
     return view('activity.aktivitas-page');
-Route::get('/berita-semua', function () {
+});
+Route::get('/berita/semua', function () {
     return view('activity.berita.semua-berita-page');
 });
 
 
-Route::get('/berita-artikel', function () {
+Route::get('/berita/artikel', function () {
     return view('activity.berita.artikel-berita-page');
 });
 
-Route::get('/berita-penghargaan', function () {
+Route::get('/berita/penghargaan', function () {
     return view('activity.berita.penghargaan-berita-page');
 });
+
+Route::get('/riset-publikasi/dashboard', function () {
+    return view('activity.riset-publikasi.dashboard-page');
+});
+
 
 // Login
 
@@ -150,5 +156,4 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/upload-kerja-sama', function () {
         return view('admin.program.kerja-sama.upload-kerja-sama');
     });
-});
 });
