@@ -17,6 +17,7 @@ export default {
                 "putih-sth": "#FFFFFF",
                 "pink-sth": "#EC018C",
                 "biru-form": "#0095DC",
+                "orange": "#FF8A00",
             },
             fontSize: {
                 "size-24": "text-xl",

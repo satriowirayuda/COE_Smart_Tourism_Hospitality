@@ -38,6 +38,11 @@ Route::get('/riset-publikasi/dashboard', function () {
     return view('activity.riset-publikasi.dashboard-page');
 });
 
+Route::get('/innovillage/dashboard', function () {
+    return view('activity.innovillage.dashboard-page');
+});
+
+
 
 // Login
 
