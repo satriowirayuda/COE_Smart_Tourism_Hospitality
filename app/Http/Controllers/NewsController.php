@@ -52,7 +52,7 @@ class NewsController extends Controller
 
         // Menyimpan gambar ke dalam storage
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image/news')->store('images', 'public');
+            $imagePath = $request->file('image')->store('images/news', 'public');
             $validated['image'] = $imagePath;
         }
 

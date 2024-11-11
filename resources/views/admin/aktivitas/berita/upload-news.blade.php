@@ -23,6 +23,7 @@
                 <p>Isi konten untuk tambah berita</p>
 
                 <form action={{ route('upload_news') }} method="POST" enctype="multipart/form-data" class="pt-10">
+                    @csrf
                     <div class="flex justify-between">
                         <!-- Bagian untuk input teks -->
                         <div class="flex-1 space-y-4">
