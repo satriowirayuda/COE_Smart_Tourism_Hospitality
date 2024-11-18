@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+// ===== Home ===== //
+Route::get('/', \App\Livewire\Public\Home::class)->name("home");
+
+// ===== Activity ===== //
+Route::prefix('activity')->group(function () {
+    Route::get('news', \App\Livewire\Public\Activity\News\Index::class)->name("news");
+});
+
 Route::get('/', function () {
     return view('welcome.home-page');
 });
