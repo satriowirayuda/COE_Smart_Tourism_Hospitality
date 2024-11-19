@@ -37,24 +37,28 @@
         const menuButton = document.getElementById('menuButton');
         const mobileMenu = document.getElementById('mobileMenu');
 
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all dropdown buttons and menus
+            const dropdownButtons = document.querySelectorAll('.dropdownButton');
+            const dropdownMenus = document.querySelectorAll('.dropdownMenu');
+
+            // Toggle the visibility of the clicked dropdown menu
+            dropdownButtons.forEach((button, index) => {
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+
+                    dropdownButtons.forEach(btn => btn.classList.remove('text-[#F6A11F]'))
+
+                    dropdownMenus[index].classList.toggle('hidden');
+                });
+            });
+
+            // Close any open dropdown if clicked outside
+            window.addEventListener('click', () => {
+                dropdownMenus.forEach(menu => menu.classList.add('hidden'));
+            });
         });
 
-        // Toggle dropdown menu visibility
-        const dropdownButton = document.getElementById('dropdownButton');
-        const dropdownMenu = document.getElementById('dropdownMenu');
-
-        dropdownButton.addEventListener('click', () => {
-            dropdownMenu.classList.toggle('hidden');
-        });
-
-        // Close dropdown if clicked outside
-        window.addEventListener('click', function(e) {
-            if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.add('hidden');
-            }
-        });
     </script>
 </body>
 

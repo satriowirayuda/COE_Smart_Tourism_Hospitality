@@ -6,10 +6,6 @@ Route::get('/', function () {
     return view('welcome.home-page');
 });
 
-Route::get('/beranda', function () {
-    return view('beranda');
-});
-
 Route::get('/sejarah', function () {
     return view('history.sejarah-page');
 });
@@ -42,6 +38,9 @@ Route::get('/innovillage/dashboard', function () {
     return view('activity.innovillage.dashboard-page');
 });
 
+Route::get('/ideinnovillage/dashboard', function () {
+    return view('activity.ideinnovillage.dashboard-page');
+});
 
 
 // Login

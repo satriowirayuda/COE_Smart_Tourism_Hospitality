@@ -7,9 +7,8 @@
     @vite('resources/css/app.css')
 
 </head>
-<body class="bg-[#FFFFFF]">
-    @include('activity.innovillage.banner')
-    @include('activity.innovillage.dashboard')
+<body class="bg-[#ffffff]">
+    @include('activity.ideinnovillage.banner')
     <x-footer></x-footer>
 </body>
 </html>
