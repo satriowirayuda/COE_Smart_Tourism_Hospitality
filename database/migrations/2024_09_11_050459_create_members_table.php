@@ -14,8 +14,8 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('position');
-            $table->string('status'); // Inhouse atau Alumni
-            $table->string('image');
+            $table->enum('status', ['inhouse', 'alumni']);
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }

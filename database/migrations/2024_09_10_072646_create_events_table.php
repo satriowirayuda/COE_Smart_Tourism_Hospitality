@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->string('name');
             $table->date('start_date');
             $table->date('end_date');
-            $table->char('category', 1); // L (LKM) atau E (External)
+            $table->enum('category', ['lkm', 'external']);
             $table->timestamps();
         });
     }

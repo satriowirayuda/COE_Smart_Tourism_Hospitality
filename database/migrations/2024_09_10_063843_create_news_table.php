@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\NewsCategory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,12 +14,12 @@ return new class extends Migration {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description');
+            $table->longText('description');
             $table->string('link');
-            $table->date('news_date');
-            $table->char('category', 1); //A (Artikel) atau P (Penghargaan)
-            $table->boolean('is_primary');
-            $table->string('image');
+            $table->date('date');
+            $table->foreignIdFor(NewsCategory::class, "category_id")->nullable()->references("id")->on("news_categories")->onDelete("set null")->onUpdate("cascade");
+            $table->boolean('is_main')->default(false);
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }
