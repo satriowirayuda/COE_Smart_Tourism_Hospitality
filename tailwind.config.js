@@ -37,5 +37,8 @@ export default {
             "biru-cyan": "#AAF0F7",
         }),
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/line-clamp'),
+
+    ],
 };

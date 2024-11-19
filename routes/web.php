@@ -29,7 +29,6 @@ Route::get('/berita/semua', function () {
     return view('activity.berita.semua-berita-page');
 });
 
-
 Route::get('/berita/artikel', function () {
     return view('activity.berita.artikel-berita-page');
 });
@@ -37,6 +36,7 @@ Route::get('/berita/artikel', function () {
 Route::get('/berita/penghargaan', function () {
     return view('activity.berita.penghargaan-berita-page');
 });
+
 
 Route::get('/riset-publikasi/dashboard', function () {
     return view('activity.riset-publikasi.dashboard-page');
@@ -50,6 +50,9 @@ Route::get('/ideinnovillage/dashboard', function () {
     return view('activity.ideinnovillage.dashboard-page');
 });
 
+Route::get('/jurnaldash', function () {
+    return view('activity.jurnal');
+});
 
 // Login
 
