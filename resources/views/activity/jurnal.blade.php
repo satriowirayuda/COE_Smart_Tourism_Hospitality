@@ -8,13 +8,13 @@
 </head>
 <body>
 
-    <section class="mx-auto px-10 mt-10">
+    <section class="mx-auto px-10 my-10">
         <div class="">
             <p class="font-bold text-4xl text-center">Jurnal Penelitian</p>
             <div class="mx-auto mt-3 border-t-2 w-80 border-[#000000]"></div>
         </div>
         
-        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 my-8 ">
+        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 mt-8 mb-12 ">
             <p class="text-center font-bold text-xl">The Development of a Room Division Application Implementing an Intelligent Planning System (IPS) to Enhance Hotel Operational Performance</p>
             
             <div class="flex flex-wrap mt-7">
@@ -55,7 +55,7 @@
             
         </div>
 
-        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 my-8 ">
+        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 mb-12">
             <p class="text-center font-bold text-xl">PENDAMPINGAN FUNGSI KELEMBAGAAN DALAM PENGELOLAAN DESA WISATA DI DESA MARGA MULYA, KECAMATAN PASIR JAMBU KABUPATEN BANDUNG</p>
             
             <div class="flex flex-wrap mt-7">
@@ -96,7 +96,7 @@
             
         </div>
 
-        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 my-8 ">
+        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8">
             <p class="text-center font-bold text-xl">PELATIHAN SADAR WISATA DAN SAPTA PESONA BAGI WARGA DESAMARGAMULYA, KECAMATAN PASIRJAMBU, KABUPATEN BANDUNG</p>
             
             <div class="flex flex-wrap mt-7">

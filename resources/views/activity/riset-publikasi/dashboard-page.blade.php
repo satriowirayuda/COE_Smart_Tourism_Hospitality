@@ -6,7 +6,7 @@
     <title>Document</title>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-[#EEEEEE]">
+<body class="bg-[#ffffff]">
     @include('activity.riset-publikasi.banner')
     @include('activity.riset-publikasi.dashboard')
 

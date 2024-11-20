@@ -46,12 +46,24 @@ Route::get('/innovillage/dashboard', function () {
     return view('activity.innovillage.dashboard-page');
 });
 
-Route::get('/ideinnovillage/dashboard', function () {
-    return view('activity.ideinnovillage.dashboard-page');
+Route::get('/ideinnodash', function () {
+    return view('activity.ideinnovillage.ideinnovillage-page');
 });
 
 Route::get('/jurnaldash', function () {
     return view('activity.jurnal');
+});
+
+Route::get('/inovasidash', function () {
+    return view('activity.inovasi.dashboard-page');
+});
+
+Route::get('/ihmsdash', function () {
+    return view('activity.inovasi.ihms-page');
+});
+
+Route::get('/lotusdash', function () {
+    return view('activity.inovasi.lotus-page');
 });
 
 // Login
