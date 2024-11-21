@@ -66,6 +66,18 @@ Route::get('/lotusdash', function () {
     return view('activity.inovasi.lotus-page');
 });
 
+Route::get('/bisnisdash', function () {
+    return view('activity.bisnis.dashboard-page');
+});
+
+Route::get('/kedaidash', function () {
+    return view('activity.bisnis.kedaicoe-page');
+});
+
+Route::get('/pelatihandash', function () {
+    return view('activity.bisnis.pelatihanjurnal-page');
+});
+
 // Login
 
 Route::get('/login', function () {

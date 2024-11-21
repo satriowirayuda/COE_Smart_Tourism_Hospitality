@@ -18,7 +18,6 @@
                 <div class="w-[652px] h-[384px] overflow-hidden">
                     <img id="mainImage" src="{{ asset('assets/pictinno.png') }}" alt="innovillage" class="w-full h-full object-cover cursor-pointer"> 
                 </div>
-                <!-- <img id="mainImage" src="{{ asset('assets/pictinno.png') }}" alt="innovillage" class="w-[638px] h-[384.51px] cursor-pointer">  -->
                 <div class="w-[128px] h-20 flex gap-2 mt-5">
                     <img class="thumbnail cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
                     <img class="thumbnail cursor-pointer" src="{{ asset('assets/subinno.png') }}" alt="innovillage">

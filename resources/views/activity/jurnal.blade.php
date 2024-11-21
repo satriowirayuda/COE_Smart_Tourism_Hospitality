@@ -8,16 +8,16 @@
 </head>
 <body>
 
-    <section class="mx-auto px-10 my-10">
-        <div class="">
+    <section class="mx-auto p-10">
+        <div>
             <p class="font-bold text-4xl text-center">Jurnal Penelitian</p>
             <div class="mx-auto mt-3 border-t-2 w-80 border-[#000000]"></div>
         </div>
         
-        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 mt-8 mb-12 ">
+        <div class="border-[1.5px] border-[#D9D9D9] rounded-md p-5 mt-8 mb-5 ">
             <p class="text-center font-bold text-xl">The Development of a Room Division Application Implementing an Intelligent Planning System (IPS) to Enhance Hotel Operational Performance</p>
             
-            <div class="flex flex-wrap mt-7">
+            <div class="flex flex-wrap mt-7 gap-4">
 
                 <div class="w-[498px] flex-shrink-0 mb-5">
                     <img class="w-full h-auto" src="{{asset('assets/jurnal.png')}}" alt="">
@@ -43,22 +43,19 @@
                     <p class="font-light text-lg text-justify mt-4 line-clamp-6">
                         Abstract. Businesses, regardless of size, must continuously adjust to fast-paced technological advancements to remain competitive, particularly in the hotel industry. The Room Division plays a vital role as the heart of the hotel business, serving as the frontliner. A significant number of hotels have implemented technological advancements inside their operational room divisions, particularly in the front office and housekeeping departments. The Room Division plays a vital role as the heart of the hotel  business,  serving  as  the  frontliner.  A  significant  number  of  hotels  have  implemented  technological advancements  inside  their  operational  room  divisions,  particularly  in  the  front  office  and  housekeeping departments ...
                     </p>
-
-                    <div class="bg-[#CCE2FF] w-28 h-8 mt-4 ml-auto text-center justify-center rounded-lg text-base text-black font-light border-2 border-[#D9D9D9] underline underline-offset-2">
-                        <a href="#" target="_blank">Selengkapnya</a>
-                    </div>
-
                 </div>
 
             </div>
 
-            
+            <div class="bg-[#CCE2FF] w-28 h-8 mt-4 ml-auto text-center justify-center rounded-lg text-base text-black font-light border-2 border-[#D9D9D9] underline underline-offset-2">
+                <a href="#" target="_blank">Selengkapnya</a>
+            </div>
         </div>
 
-        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8 mb-12">
+        <div class="border-[1.5px] border-[#D9D9D9] rounded-md p-5 mb-5">
             <p class="text-center font-bold text-xl">PENDAMPINGAN FUNGSI KELEMBAGAAN DALAM PENGELOLAAN DESA WISATA DI DESA MARGA MULYA, KECAMATAN PASIR JAMBU KABUPATEN BANDUNG</p>
             
-            <div class="flex flex-wrap mt-7">
+            <div class="flex flex-wrap mt-7 gap-4">
 
                 <div class="w-[498px] flex-shrink-0 mb-5">
                     <img class="w-full h-auto" src="{{asset('assets/jurnal.png')}}" alt="">
@@ -96,10 +93,10 @@
             
         </div>
 
-        <div class="border-[1.5px] border-[#D9D9D9] rounded-md py-3 px-8">
+        <div class="border-[1.5px] border-[#D9D9D9] rounded-md p-5">
             <p class="text-center font-bold text-xl">PELATIHAN SADAR WISATA DAN SAPTA PESONA BAGI WARGA DESAMARGAMULYA, KECAMATAN PASIRJAMBU, KABUPATEN BANDUNG</p>
             
-            <div class="flex flex-wrap mt-7">
+            <div class="flex flex-wrap mt-7 gap-4">
 
                 <div class="w-[498px] flex-shrink-0 mb-5">
                     <img class="w-full h-auto" src="{{asset('assets/jurnal.png')}}" alt="">
