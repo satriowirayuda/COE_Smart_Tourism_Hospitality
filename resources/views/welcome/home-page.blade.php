@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    @include('welcome.banner')
+    @include('welcome.bannervid')
     @include('welcome.profil-ketua')
     @include('welcome.project')
     @include('welcome.news')

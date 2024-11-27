@@ -9,28 +9,18 @@
 </head>
 
 <body>
-    <section class="px-4 sm:px-8 lg:px-28 pt-10">
-        <div class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">
+    <section class="px-5 sm:px-8 lg:px-28 pt-10">
+        <div class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center font-lota1">
             <p>Sejarah COE</p>
             <p>Smart Tourism & Hospitality</p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-7 py-10 gap-6">
-            <div class="lg:col-span-5">
+            <div class="lg:col-span-5 font-lota1">
                 <p class="font-paragraf-sth text-base sm:text-lg lg:text-xl font-light text-justify">
-                    Selamat datang di pusat keunggulan (Center of Excellence - CoE) Smart Tourism and Hospitality! Di
-                    era di mana teknologi memainkan peran sentral dalam semua aspek kehidupan, industri pariwisata dan
-                    perhotelan tidak terkecuali. Kami berkomitmen untuk menjadi garda terdepan dalam menggabungkan
-                    inovasi teknologi dengan pengalaman pariwisata dan perhotelan yang unggul. Visi dan misi kami tidak
-                    hanya tentang menciptakan destinasi yang cerdas secara teknologi, tetapi juga memberikan pengalaman
-                    yang tak terlupakan bagi.
+                CoE Smart Tourism and Hospitality didirikan pada bulan Maret 2024 sebagai salah satu unit strategis di Universitas Telkom. Unit ini dibentuk untuk mendukung kegiatan Research, Innovation, Business, and Community Service (RIBCS) di bidang pariwisata dan perhotelan berbasis teknologi digital. Dengan berfokus pada riset, inovasi, bisnis, dan pengabdian masyarakat, CoE ini bertujuan untuk menyumbang, menyebarluaskan, dan berkontribusi dalam perkembangan ilmu pengetahuan, teknologi, manajemen, dan seni.
                 </p>
                 <p class="font-paragraf-sth text-base sm:text-lg lg:text-xl font-light text-justify mt-4">
-                    Selamat datang di pusat keunggulan (Center of Excellence - CoE) Smart Tourism and Hospitality! Di
-                    era di mana teknologi memainkan peran sentral dalam semua aspek kehidupan, industri pariwisata dan
-                    perhotelan tidak terkecuali. Kami berkomitmen untuk menjadi garda terdepan dalam menggabungkan
-                    inovasi teknologi dengan pengalaman pariwisata dan perhotelan yang unggul. Visi dan misi kami tidak
-                    hanya tentang menciptakan destinasi yang cerdas secara teknologi, tetapi juga memberikan pengalaman
-                    yang tak terlupakan bagi.
+                CoE ini berperan sebagai penghubung antara akademisi, pemerintah, industri, operator, dan pengguna jasa dalam menciptakan kajian akademik yang relevan, baik di tingkat nasional maupun internasional. Selain itu, CoE turut menjadi pemasok pemikiran strategis dalam pengembangan sektor pariwisata dan hospitality yang berkelanjutan di Indonesia melalui pendekatan kolaboratif lintas sektor.
                 </p>
             </div>
 

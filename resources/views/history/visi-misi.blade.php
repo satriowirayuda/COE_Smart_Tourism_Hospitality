@@ -9,11 +9,10 @@
 </head>
 
 <body>
-    <section class="px-4 sm:px-8 lg:px-28 pt-10">
-        <!-- <hr class="h-[20px] bg-indigo-500 border-0 rounded-full mb-10"> -->
+    <section class="px-4 sm:px-8 lg:px-28 lg:pt-10">
         <div class="border-t-[1px] border-black"></div>
         <div class="py-10">
-            <div class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center">
+            <div class="text-3xl lg:text-5xl font-semibold text-center">
                 <p>Visi dan Misi</p>
                 <p>COE Smart Tourism & Hospitality</p>
             </div>
