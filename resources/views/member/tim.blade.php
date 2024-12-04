@@ -31,9 +31,9 @@
                         <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
-                        <p class="font-semibold text-white">Nama Anggota</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
+                        <p class="font-semibold text-white">Dr. Ersy Ervina, S.Sos.MM.Par.</p>
+                        <p class="text-pink-sth pt-1">Ketua COE STH</p>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@
                         <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
                         <p class="font-semibold text-white">Nama Anggota</p>
                         <p class="text-pink-sth pt-1">JABATAN</p>
                     </div>
@@ -55,7 +55,7 @@
                         <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
                         <p class="font-semibold text-white">Nama Anggota</p>
                         <p class="text-pink-sth pt-1">JABATAN</p>
                     </div>
@@ -67,7 +67,7 @@
                         <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
                         <p class="font-semibold text-white">Nama Anggota</p>
                         <p class="text-pink-sth pt-1">JABATAN</p>
                     </div>
@@ -84,25 +84,26 @@
             <p class="text-xl md:text-2xl font-bold text-white text-center">ALUMNI</p>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pt-10 gap-y-5 md:gap-y-3 lg:gap-6 items-center mx-auto">
-                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
-                    <div class="relative">
-                        <img src="{{ asset('assets/anggota-1.png') }}" alt="anggota" class="rounded-lg">
-                        <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
-                        <p class="font-semibold text-white">Nama Alumni</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
-                    </div>
-                </div>
-
+                
                 <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
                     <div class="relative">
                         <img src="{{ asset('assets/anggota-2.png') }}" alt="anggota" class="rounded-lg">
                         <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
+                        <p class="font-semibold text-white">Nama Alumni</p>
+                        <p class="text-pink-sth pt-1">JABATAN</p>
+                    </div>
+                </div>
+                
+                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
+                    <div class="relative">
+                        <img src="{{ asset('assets/anggota-2.png') }}" alt="anggota" class="rounded-lg">
+                        <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
                         <p class="font-semibold text-white">Nama Alumni</p>
                         <p class="text-pink-sth pt-1">JABATAN</p>
                     </div>
@@ -114,7 +115,7 @@
                         <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
                         <p class="font-semibold text-white">Nama Alumni</p>
                         <p class="text-pink-sth pt-1">JABATAN</p>
                     </div>
@@ -126,7 +127,7 @@
                         <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
                         </div>
                     </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5 z-20">
+                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
                         <p class="font-semibold text-white">Nama Alumni</p>
                         <p class="text-pink-sth pt-1">JABATAN</p>
                     </div>

@@ -10,8 +10,8 @@
 
 <body>
     <section class="relative pt-28">
+    <x-white-navigation />
         <div class="absolute w-full bg-biru-sth h-[230px] lg:h-[340px] top-0 left-0 -z-10"></div>
-        <x-navigation />
 
         <div class="relative w-full h-[181px] md:h-[300px] lg:h-[446px] px-5 lg:px-28 mx-auto">
             <img class="w-full h-full object-cover rounded-[40px]"

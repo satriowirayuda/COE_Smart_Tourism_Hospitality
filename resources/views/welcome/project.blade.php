@@ -1,5 +1,5 @@
-<section class="px-5 lg:px-36 m-auto">
-    <div class="pt-10">
+<section class="px-5 lg:px-28 m-auto">
+    <div class="pt-20">
         <p class="text-3xl font-bold pb-10">Project Terkini</p>
         <div class="bg-gray-200 py-10 px-10 rounded-[22px] w-full flex flex-col sm:flex-row gap-x-14 shadow-xl">
 

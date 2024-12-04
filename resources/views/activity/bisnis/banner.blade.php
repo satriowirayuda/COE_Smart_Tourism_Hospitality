@@ -10,6 +10,7 @@
 
 <body>
     <section class="relative pt-28">
+    <x-white-navigation />
         <div class="absolute w-full bg-biru-sth h-[340px] top-0 left-0 -z-10"></div>
 
         <div class="relative w-full h-72 lg:h-[446px] px-4 lg:px-28 mx-auto">

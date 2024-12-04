@@ -38,8 +38,12 @@ Route::get('/berita/penghargaan', function () {
 });
 
 
-Route::get('/riset-publikasi/dashboard', function () {
+Route::get('/risetdash', function () {
     return view('activity.riset-publikasi.dashboard-page');
+});
+
+Route::get('/risetdash2', function () {
+    return view('activity.riset-publikasi.dashboard');
 });
 
 Route::get('/innovillage/dashboard', function () {

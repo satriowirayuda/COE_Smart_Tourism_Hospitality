@@ -20,9 +20,9 @@
         // Change navbar background on scroll
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
-            const bannerHeight = document.querySelector('section').offsetHeight;
+            // const bannerHeight = document.querySelector('section').offsetHeight;
 
-            if (window.scrollY > bannerHeight - 100) {
+            if (window.scrollY > 0) {
                 // Saat user melewati banner section
                 navbar.classList.add('bg-white', 'shadow-md', 'text-black');
                 navbar.classList.remove('bg-transparent', 'text-white');
@@ -60,6 +60,7 @@
         });
 
     </script>
+
 </body>
 
 </html>

@@ -10,6 +10,7 @@
 
 <body>
     <section class="relative pt-28">
+    <x-navigation />
         <div class="absolute w-full bg-biru-sth h-[340px] top-0 left-0 -z-10"></div>
 
         <div class="relative w-full max-w-[1280px] h-72 lg:h-[446px] px-4 lg:px-28 mx-auto">
@@ -34,6 +35,51 @@
         <div class="border-t-[1px] border-black"></div>
 
     </section>
+
+    <script>
+        // Change navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const bannerHeight = document.querySelector('section').offsetHeight;
+
+            if (window.scrollY > bannerHeight - 100) {
+                // Saat user melewati banner section
+                navbar.classList.add('bg-white', 'shadow-md', 'text-black');
+                navbar.classList.remove('bg-transparent', 'text-white');
+            } else {
+                // Saat user berada di dalam banner section
+                navbar.classList.add('bg-transparent', 'text-white');
+                navbar.classList.remove('bg-white', 'shadow-md', 'text-black');
+            }
+        });
+
+        // Toggle mobile menu visibility
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all dropdown buttons and menus
+            const dropdownButtons = document.querySelectorAll('.dropdownButton');
+            const dropdownMenus = document.querySelectorAll('.dropdownMenu');
+
+            // Toggle the visibility of the clicked dropdown menu
+            dropdownButtons.forEach((button, index) => {
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+
+                    dropdownButtons.forEach(btn => btn.classList.remove('text-[#F6A11F]'))
+
+                    dropdownMenus[index].classList.toggle('hidden');
+                });
+            });
+
+            // Close any open dropdown if clicked outside
+            window.addEventListener('click', () => {
+                dropdownMenus.forEach(menu => menu.classList.add('hidden'));
+            });
+        });
+
+    </script>
 </body>
 
 

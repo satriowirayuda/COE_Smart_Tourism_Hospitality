@@ -1,4 +1,4 @@
-<footer class="w-full bg-[#2593CF] text-white pb-28 px-4 lg:px-28 ">
+<footer class="w-full bg-[#2593CF] text-white pb-28 px-5 md:px-10 lg:px-28">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-10 sm:gap-16">
         <div class="grid-cols-1">
             <p class="text-lg sm:text-xl font-semibold">Center of Excellence Smart Tourism & Hospitality</p>
@@ -7,7 +7,7 @@
         <div class="grid-cols-1">
             <p class="text-lg lg:text-xl font-semibold">Akses Cepat</p>
             <div class="text-xs sm:text-sm pt-4 sm:pt-[55px] space-y-2 sm:space-y-3">
-                <p><a href="#">Home</a></p>
+                <p><a href="/">Home</a></p>
                 <p><a href="#">Tentang Kami</a></p>
                 <p><a href="#">Aktivitas</a></p>
                 <p><a href="#">Program</a></p>
@@ -28,7 +28,7 @@
                     <img src="{{ asset('assets/IG-Button.svg') }}" alt="Instagram"
                         class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px]">
                 </a>
-                <a href="" target="_blank">
+                <a href="https://www.linkedin.com/company/coe-sth/" target="_blank">
                     <img src="{{ asset('assets/Linked-In-Button.svg') }}" alt="LinkedIn"
                         class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px]">
                 </a>

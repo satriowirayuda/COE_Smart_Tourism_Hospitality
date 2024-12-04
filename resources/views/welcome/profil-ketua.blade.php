@@ -1,5 +1,5 @@
-<section class="w-full bg-background py-10 lg:py-24">
-    <div class="lg:grid lg:grid-cols-3 gap-6 px-5 lg:px-36">
+<section class="w-full bg-background py-10 lg:py-24 px-5 lg:px-28">
+    <div class="lg:grid lg:grid-cols-3 gap-6 ">
         <div class="col-span-2">
 
             <div class="lg:pb-3">
@@ -23,14 +23,14 @@
         </div>
     </div>
 
-    <div class="px-[28px] sm:px-8 lg:px-36 py-10 flex">
-        <div class="mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20 lg:pt-20">
+    <div class="py-10 flex">
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 lg:pt-20">
             <!-- Inovasi -->
             <div class="relative group flex justify-center">
                 <img src="{{ asset('assets/inovasi.png') }}" alt="Inovasi"
                     class="w-full sm:w-[400px] lg:w-[512px] h-auto object-cover shadow-2xl">
                 <div
-                    class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#2593CF] text-white italic font-semibold flex justify-center items-center shadow-2xl">
+                    class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-52 h-[33.41px] rounded-md bg-[#2593CF] text-white italic font-semibold flex justify-center items-center shadow-2xl">
                     Inovasi
                 </div>
                 <a href="#inovasi" class="absolute inset-0"></a>
@@ -40,7 +40,7 @@
                 <img src="{{ asset('assets/bisnis.png') }}" alt="Bisnis"
                     class="w-full sm:w-[400px] lg:w-[512px] h-auto object-cover shadow-2xl">
                 <div
-                    class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#E20A91] text-white italic font-semibold flex justify-center items-center shadow-2xl">
+                    class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-52 h-[33.41px] rounded-md bg-[#E20A91] text-white italic font-semibold flex justify-center items-center shadow-2xl">
                     Bisnis
                 </div>
                 <a href="#bisnis" class="absolute inset-0"></a>
@@ -51,14 +51,14 @@
                 <img src="{{ asset('assets/riset.png') }}" alt="Riset dan Publikasi"
                     class="w-full sm:w-[400px] lg:w-[512px] h-auto object-cover shadow-2xl">
                 <div
-                    class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-[274.29px] h-[33.41px] rounded-md bg-[#F6A11F] text-white italic font-semibold flex justify-center items-center shadow-2xl">
+                    class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-52 h-[33.41px] rounded-md bg-[#F6A11F] text-white italic font-semibold flex justify-center items-center shadow-2xl">
                     Riset dan Publikasi
                 </div>
                 <a href="#risetdanpublikasi" class="absolute inset-0"></a>
             </div>
 
             <!-- Pengabdian Masyarakat -->
-            <div class="relative group flex justify-center">
+            <!-- <div class="relative group flex justify-center">
                 <img src="{{ asset('assets/pengmas.png') }}" alt="Pengabdian Masyarakat"
                     class="w-full sm:w-[400px] lg:w-[512px] h-auto object-cover shadow-2xl">
                 <div
@@ -66,7 +66,7 @@
                     Pengabdian Masyarakat
                 </div>
                 <a href="#PengabdianMasyarakat" class="absolute inset-0"></a>
-            </div>
+            </div> -->
         </div>
     </div>
 

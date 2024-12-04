@@ -20,6 +20,7 @@ export default {
                 "pink-sth": "#EC018C",
                 "biru-form": "#0095DC",
                 "orange": "#FF8A00",
+                "menu": "#F6A11F",
             },
             fontSize: {
                 "size-24": "text-xl",
