@@ -25,13 +25,25 @@ class DatabaseSeeder extends Seeder
     {
         User::create([
             "name" => "Admin",
-            "username" => "coe_admin",
+            "username" => "ceo_admin",
             "password" => bcrypt("password123"),
         ]);
         $this->call(NewsCategoriesSeeder::class);
         News::factory(10)->create();
         Event::factory(20)->create();
         Member::factory(10)->create();
+        Training::factory(10)->create();
+        Shop::factory()->count(10)->create();
+        Innovillage::factory()->count(10)->create();
+        Journal::factory()->count(10)->create();
+        Intern::factory()->count(10)->create();
+        Partner::factory()->count(10)->create();
         $this->call(ProjectSeeder::class);
+        // User::factory(10)->create();
+
+        // User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
     }
 }
