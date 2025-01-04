@@ -27,15 +27,15 @@
                     </svg>
                 </button>
 
-                <div class="dropdownMenu absolute hidden bg-white text-black right-0 mt-2 rounded shadow-lg">
-                    <a href="/sejarah" class="block px-6 py-2 hover:bg-gray-200">Sejarah CoE STH</a>
-                    <a href="/anggota" class="block px-6 py-2 hover:bg-gray-200">Anggota Tim</a>
+                <div class="dropdownMenu absolute hidden w-36 bg-white text-black right-0 mt-2 rounded-xl shadow-lg text-xs">
+                    <a href="/sejarah" class="block px-3 py-2 hover:bg-gray-200">Sejarah CoE STH</a>
+                    <a href="/anggota" class="block px-3 py-2 hover:bg-gray-200">Anggota Tim</a>
                 </div>
             </div>
 
             <!-- Dropdown Aktivitas -->
             <div class="relative dropdown">
-                <button class="dropdownButton flex items-center pr-6 text-sm font-semibold hover:text-[#F6A11F] active:text-[#F6A11F] focus:text-[#F6A11F]">
+                <button class="dropdownButton flex items-center pr-6 text-sm font-semibold hover:text-[#F6A11F] active:text-[#F6A11F] focus:text-[#F6A11F] {{ request()->is('sejarah', 'anggota') ? 'text-[#F6A11F]' : '' }}">
                     Aktivitas
                     <svg class="w-3 h-3 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -43,17 +43,17 @@
                     </svg>
                 </button>
 
-                <div class="dropdownMenu absolute hidden bg-white text-black right-0 mt-2 rounded shadow-lg">
-                    <a href="/berita/semua" class="block px-6 py-2 hover:bg-gray-200">Berita</a>
-                    <a href="/risetdash" class="block px-6 py-2 hover:bg-gray-200">Riset dan Publikasi</a>
-                    <a href="/innovillage/dashboard" class="block px-6 py-2 hover:bg-gray-200">Innovasi</a>
-                    <a href="#" class="block px-6 py-2 hover:bg-gray-200">Bisnis</a>
+                <div class="dropdownMenu absolute hidden w-36 bg-white text-black mt-2 rounded-xl shadow-lg text-xs">
+                    <a href="/berita/semua" class="block px-3 py-2 hover:bg-gray-200">Berita</a>
+                    <a href="/risetdash" class="block px-3 py-2 hover:bg-gray-200">Riset dan Publikasi</a>
+                    <a href="/inovasidash" class="block px-3 py-2 hover:bg-gray-200">Innovasi</a>
+                    <a href="/bisnisdash" class="block px-3 py-2 hover:bg-gray-200">Bisnis</a>
                 </div>
             </div>
 
             <!-- Dropdown Program -->
             <div class="relative dropdown">
-                <button class="dropdownButton flex items-center text-sm font-semibold hover:text-[#F6A11F] focus:outline-none">
+                <button class="dropdownButton flex items-center text-sm font-semibold hover:text-[#F6A11F] active:text-[#F6A11F] focus:text-[#F6A11F] {{ request()->is('sejarah', 'anggota') ? 'text-[#F6A11F]' : '' }}">
                     Program
                     <svg class="w-3 h-3 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -61,9 +61,9 @@
                     </svg>
                 </button>
 
-                <div class="dropdownMenu absolute hidden bg-white text-black right-0 mt-2 rounded shadow-lg">
-                    <a href="/magangdash" class="block px-6 py-2 hover:bg-gray-200">MBKM dan Magang</a>
-                    <a href="/kerjasamadash" class="block px-6 py-2 hover:bg-gray-200">kerja Sama</a>
+                <div class="dropdownMenu absolute hidden w-36 bg-white text-black right-0 mt-2 rounded-xl shadow-lg text-xs">
+                    <a href="/magangdash" class="block px-3 py-2 hover:bg-gray-200">MBKM dan Magang</a>
+                    <a href="/collabdash" class="block px-3 py-2 hover:bg-gray-200">Kerja Sama</a>
                 </div>
             </div>
 

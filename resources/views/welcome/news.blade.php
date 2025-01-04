@@ -19,16 +19,16 @@
                         </div>
                     </div>
 
-                    <div class="text-white absolute top-0 right-0 p-5 text-base font-lota1">
+                    <div class="text-white absolute top-0 right-0 px-10 py-5 text-base font-lota1">
                         <a href="#" target="_blank">
                             Selengkapnya
                             <i class="fas fa-arrow-right ml-1"></i>
                         </a>
                     </div>
 
-                    <div class="absolute bottom-0 left-0 w-full text-white p-5">
+                    <div class="absolute bottom-0 left-0 w-full text-white px-10 py-5">
                         <p class="text-4xl font-bold">Judul Berita</p>
-                        <p class="font-lota1 text-base">
+                        <p class="font-lota1 text-base pt-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard.
                         </p>

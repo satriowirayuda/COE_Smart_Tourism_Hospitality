@@ -86,8 +86,8 @@ Route::get('/magangdash', function () {
     return view('program.magang.magang-page');
 });
 
-Route::get('/kerjasamadash', function () {
-    return view('program.kerjasama.kerjasama-page');
+Route::get('/collabdash', function () {
+    return view('program.kerjasama.collab');
 });
 
 // Login

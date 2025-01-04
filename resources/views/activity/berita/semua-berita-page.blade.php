@@ -10,20 +10,20 @@
     @include('activity.berita.banner')
     @include('activity.berita.semua')
 
-    <script> 
+    <script>
         // Change navbar background on scroll
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             // const bannerHeight = document.querySelector('section').offsetHeight;
 
             if (window.scrollY > 0) {
-            // Jika posisi scroll lebih dari 0, ubah gaya navbar
-                navbar.classList.add('bg-white', 'shadow-md', 'text-black', 'px-28', 'mx-0', 'rounded-none');
-                navbar.classList.remove('text-white', 'rounded-b-2xl', 'mx-16', 'px-12');
+                // Saat user melewati banner section
+                navbar.classList.add('bg-white', 'shadow-md', 'text-black');
+                navbar.classList.remove('bg-transparent', 'text-white');
             } else {
-            // Jika posisi scroll di atas (0), kembalikan gaya asli
-                navbar.classList.add('bg-white', 'text-black', 'rounded-b-2xl', 'mx-16', 'px-12');
-                navbar.classList.remove('shadow-md', 'px-0', 'mx-0', 'rounded-none');
+                // Saat user berada di dalam banner section
+                navbar.classList.add('bg-transparent', 'text-white');
+                navbar.classList.remove('bg-white', 'shadow-md', 'text-black');
             }
         });
 
@@ -39,17 +39,34 @@
             // Toggle the visibility of the clicked dropdown menu
             dropdownButtons.forEach((button, index) => {
                 button.addEventListener('click', (e) => {
-                    e.stopPropagation();
+                e.stopPropagation();
 
-                    dropdownButtons.forEach(btn => btn.classList.remove('text-[#F6A11F]'))
+                // Close other dropdowns
+                dropdownMenus.forEach((menu, i) => {
+                    if (i !== index) {
+                        menu.classList.add('hidden');
+                    }
+                });
 
+                    // Toggle current dropdown
                     dropdownMenus[index].classList.toggle('hidden');
                 });
             });
-
             // Close any open dropdown if clicked outside
             window.addEventListener('click', () => {
                 dropdownMenus.forEach(menu => menu.classList.add('hidden'));
+            });
+
+            // Highlight active menu
+            const currentPath = window.location.pathname; // Get the current URL path
+            const links = document.querySelectorAll('.dropdown a, .md\\:flex > a'); // Select all links
+
+            links.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add('text-[#F6A11F]', 'font-semibold'); // Add active styling
+                } else {
+                    link.classList.remove('text-[#F6A11F]', 'font-semibold'); // Remove active styling
+                }
             });
         });
 
