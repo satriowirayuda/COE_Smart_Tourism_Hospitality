@@ -90,6 +90,10 @@ Route::get('/collabdash', function () {
     return view('program.kerjasama.collab');
 });
 
+Route::get('/pengmasdash', function () {
+    return view('activity.pengmas.dashboard-page');
+});
+
 // Login
 
 Route::get('/login', function () {
