@@ -7,43 +7,43 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    
-    <section class=" mx-auto max-w-[1050px] w-full mt-28 mb-14 px-4">
+    <section class="mx-auto max-w-[1050px] w-full mt-40 mb-14 px-8 sm:px-16 md:px-16 lg:px-4 font-arial">
+    <x-white-navigation />
 
-        <p class=" text-3xl"><b>IHMS</b> ( Intelligent Hotel Management System )</p>
+        <b class="text-base mx-auto sm:text-2xl lg:text-3xl">Intelligent Hotel Management System (IHMS)</b>
 
         <div class="col-span-2 mt-6">
-            <div class="w-[1018px] h-[420px] overflow-hidden">
-                <img id="mainImage" src="{{ asset('assets/pictinno.png') }}" alt="innovillage" class="w-full h-full object-cover cursor-pointer"> 
+            <div class="w-[366px] h-[250px] md:w-[675px] sm:h-[296px] lg:w-[1018px] lg:h-[420px] overflow-hidden">
+                <img id="mainImage" src="{{ asset('assets/pictinno.png') }}" alt="innovillage" class="w-full h-full object-cover"> 
             </div>
 
             <div class="grid grid-cols-5 gap-2 mt-5">
-                <img class="thumbnail w-[200px] h-[100px] object-cover cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
-                <img class="thumbnail w-[200px] h-[100px] object-cover cursor-pointer" src="{{ asset('assets/subinno.png') }}" alt="innovillage">
-                <img class="thumbnail w-[200px] h-[100px] object-cover cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
-                <img class="thumbnail w-[200px] h-[100px] object-cover cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
-                <img class="thumbnail w-[200px] h-[100px] object-cover cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
+                <img class="thumbnail w-[200px] h-[60px] md:w-[200px] md:h-[100px] lg:w-[200px] lg:h-[100px] object-cover cursor-pointer" src="{{ asset('assets/binno.png') }}" alt="innovillage">
+                <img class="thumbnail w-[200px] h-[60px] md:w-[200px] md:h-[100px] lg:w-[200px] lg:h-[100px] object-cover cursor-pointer" src="{{ asset('assets/subinno.png') }}" alt="innovillage">
+                <img class="thumbnail w-[200px] h-[60px] md:w-[200px] md:h-[100px] lg:w-[200px] lg:h-[100px] object-cover cursor-pointer" src="{{ asset('assets/binovasi.png') }}" alt="innovillage">
+                <img class="thumbnail w-[200px] h-[60px] md:w-[200px] md:h-[100px] lg:w-[200px] lg:h-[100px] object-cover cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
+                <img class="thumbnail w-[200px] h-[60px] md:w-[200px] md:h-[100px] lg:w-[200px] lg:h-[100px] object-cover cursor-pointer" src="{{ asset('assets/pictinno.png') }}" alt="innovillage">
             </div>
         </div>
 
-        <div class="flex gap-60 mt-5">
+        <div class="flex gap-20 sm:gap-40 lg:gap-60 mt-5">
             <div>
-                <p class="text-xl font-bold text-[#FF8A00]">Kategori:</p>
-                <p class="text-base">Hospitality</p>
+                <p class="text-sm md:text-lg lg:text-xl font-bold text-[#FF8A00]">Kategori:</p>
+                <p class="text-sm md:text-lg lg:text-base">Hospitality</p>
             </div>
             <div>
-                <p class="text-xl font-bold text-[#FF8A00]">Klien:</p>
-                <p class="text-base">Lingian</p> 
+                <p class="text-sm md:text-lg lg:text-xl font-bold text-[#FF8A00]">Klien:</p>
+                <p class="text-sm md:text-lg lg:text-base">Lingian</p> 
             </div>
         </div>
         
 
         <div class="pt-6">
-            <p class="font-semibold text-2xl">Pengenalan</p>
-            <p class="text-justify font-light mt-5 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ..</p>
+            <p class="font-semibold text-lg sm:text-xl lg:text-2xl">Pengenalan</p>
+            <p class="text-justify font-light mt-5 text-lg sm:text-xl lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ..</p>
 
-            <p class="font-semibold text-2xl mt-6">Apa saja yang kami kerjakan :</p>
-            <ul class="list-decimal pl-4 font-light text-xl mt-5">
+            <p class="font-semibold text-lg sm:text-xl lg:text-2xl mt-6">Apa saja yang kami kerjakan :</p>
+            <ul class="list-decimal pl-4 font-light text-lg sm:text-xl lg:text-xl mt-5">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
@@ -52,13 +52,14 @@
         </div>
 
         <div>
-            <p class="font-semibold text-2xl mt-16 text-center">Mitra dan Dukungan :</p>
-            <div class="flex gap-10 justify-center mt-5">
-                <img class="w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo Lotus">
-                <img class="w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
-                <img class="w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
-                <img class="w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
-                <img class="w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
+            <p class="font-semibold text-lg sm:text-xl lg:text-2xl mt-16 text-center">Mitra dan Dukungan :</p>
+            <div class="grid grid-cols-5 gap-4 sm:gap-8 lg:gap-10 justify-center mt-5">
+                <img class="w-16 sm:w-20 lg:w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo Lotus">
+                <img class="w-16 sm:w-20 lg:w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
+                <img class="w-16 sm:w-20 lg:w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
+                <img class="w-16 sm:w-20 lg:w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
+                <img class="w-16 sm:w-20 lg:w-20" src="{{asset('assets/logo_lotus.svg')}}" alt="Logo ">
+
             </div>
         </div>
     
@@ -78,7 +79,8 @@
 
     </script>
 
-<script>
+    <!-- NAVIGATION -->
+    <script>
         // Change navbar background on scroll
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
@@ -90,8 +92,8 @@
                 navbar.classList.remove('text-white', 'mx-16', 'rounded-b-2xl');
             } else {
                 // Saat user berada di dalam banner section
-                navbar.classList.add('bg-white', 'mx-16', 'rounded-b-2xl');
-                navbar.classList.remove('shadow-md', 'px-28');
+                navbar.classList.add('bg-white', 'shadow-md', 'px-28');
+                navbar.classList.remove('shadow-md' );
             }
         });
 
@@ -109,15 +111,33 @@
                 button.addEventListener('click', (e) => {
                     e.stopPropagation();
 
-                    dropdownButtons.forEach(btn => btn.classList.remove('text-[#F6A11F]'))
+                    // Close other dropdowns
+                    dropdownMenus.forEach((menu, i) => {
+                        if (i !== index) {
+                            menu.classList.add('hidden');
+                        }
+                    });
 
+                    // Toggle current dropdown
                     dropdownMenus[index].classList.toggle('hidden');
                 });
             });
-
+            
             // Close any open dropdown if clicked outside
             window.addEventListener('click', () => {
                 dropdownMenus.forEach(menu => menu.classList.add('hidden'));
+            });
+
+            // Highlight active menu
+            const currentPath = window.location.pathname; // Get the current URL path
+            const links = document.querySelectorAll('.dropdown a, .md\\:flex > a'); // Select all links
+
+            links.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add('text-[#F6A11F]', 'font-semibold'); // Add active styling
+                } else {
+                    link.classList.remove('text-[#F6A11F]', 'font-semibold'); // Remove active styling
+                }
             });
         });
 

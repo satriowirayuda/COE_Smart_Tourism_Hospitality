@@ -31,9 +31,9 @@
 
     <section class="mx-[110px] mb-20 pt-8">
         <div class="flex justify-center space-x-5 gap-10">
-            <div class="text-center bg-white shadow-2xl rounded-2xl overflow-hidden w-[310px]">
+            <div class="text-center bg-white shadow-2xl rounded-xl overflow-hidden w-[310px]">
                 <a href="/ihmsdash">
-                    <img src="{{ asset('assets/img-innovilage.png') }}" alt="" class="w-full rounded-t-2xl">
+                    <img src="{{ asset('assets/img-innovilage.png') }}" alt="" class="w-full rounded-t-xl">
                     <div class="px-8 py-4 font-arial">
                         <p class="text-sm font-bold line-clamp-1">IHMS</p>
                         <p class="text-sm font-light line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
@@ -43,9 +43,9 @@
                 </a>
             </div>
             
-            <div class="text-center bg-white shadow-2xl rounded-2xl overflow-hidden w-[310px]">
+            <div class="text-center bg-white shadow-xl rounded-2xl overflow-hidden w-[310px]">
                 <a href="/lotusdash">
-                    <img src="{{ asset('assets/img-innovilage.png') }}" alt="" class="w-full rounded-t-2xl">
+                    <img src="{{ asset('assets/img-innovilage.png') }}" alt="" class="w-full rounded-t-xl">
                     <div class="px-8 py-4 font-arial">
                         <p class="text-sm font-bold line-clamp-1">LOTUS</p>
                         <p class="text-sm font-light line-clamp-4">LOTUS (Lorong Waktu Sejarah) merupakan sebuah mini bioskop yang 100% isi konten memanfaatkan AI (Artificial Intelligence)</p>
