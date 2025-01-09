@@ -32,7 +32,7 @@
             } else {
                 // Saat user berada di dalam banner section
                 navbar.classList.add('bg-transparent', 'text-white');
-                navbar.classList.remove('bg-white', 'shadow-md', 'text-black');
+                navbar.classList.remove('bg-white', 'shadow-md');
             }
         });
 
@@ -48,19 +48,20 @@
             // Toggle the visibility of the clicked dropdown menu
             dropdownButtons.forEach((button, index) => {
                 button.addEventListener('click', (e) => {
-                e.stopPropagation();
+                    e.stopPropagation();
 
-                // Close other dropdowns
-                dropdownMenus.forEach((menu, i) => {
-                    if (i !== index) {
-                        menu.classList.add('hidden');
-                    }
-                });
+                    // Close other dropdowns
+                    dropdownMenus.forEach((menu, i) => {
+                        if (i !== index) {
+                            menu.classList.add('hidden');
+                        }
+                    });
 
                     // Toggle current dropdown
                     dropdownMenus[index].classList.toggle('hidden');
                 });
             });
+            
             // Close any open dropdown if clicked outside
             window.addEventListener('click', () => {
                 dropdownMenus.forEach(menu => menu.classList.add('hidden'));

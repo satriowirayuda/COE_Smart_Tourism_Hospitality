@@ -1,4 +1,4 @@
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-20 mx-16 bg-white px-12 py-2 rounded-b-2xl shadow-md">
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-20 mx-16 rounded-b-2xl bg-white px-12 py-2 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
         <!-- Logo --> 
         <div class="flex items-center gap-2">
@@ -7,7 +7,7 @@
             </div>
             <div class="flex flex-col justify-center font-lota1">
                 <span class="text-base font-semibold">Center of Excellence</span>
-                <span class="text-base font-semibold">Smart Tourism & Hotpitality</span>
+                <span class="text-base font-semibold">Smart Tourism & Hospitality</span>
             </div>
         </div>
 
@@ -46,11 +46,26 @@
                     </svg>
                 </button>
 
-                <div class="dropdownMenu absolute hidden w-36 bg-white text-black mt-2 rounded-xl shadow-lg text-xs">
+                <div class="dropdownMenu absolute hidden w-40 bg-white text-black mt-2 rounded-xl shadow-lg text-xs">
                     <a href="/berita/semua" class="block px-3 py-2 hover:bg-gray-200">Berita</a>
-                    <a href="/risetdash" class="block px-3 py-2 hover:bg-gray-200">Riset dan Publikasi</a>
-                    <a href="/inovasidash" class="block px-3 py-2 hover:bg-gray-200">Innovasi</a>
+
+                    <div class="relative group">
+                        <a href="/risetdash" class="px-3 py-2 hover:bg-gray-200 flex justify-between items-center">
+                            Riset dan Publikasi
+                            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-full top-0 w-32 hidden group-hover:block bg-white text-black r mt-0 rounded-xl shadow-lg text-xs">
+                            <a href="/innovillagedash" class="block px-3 py-2 hover:bg-gray-200">Innovillage</a>
+                            <a href="/jurnaldash" class="block px-3 py-2 hover:bg-gray-200">Jurnal Penelitian</a>
+                        </div>
+                    </div>
+
+                    <a href="/inovasidash" class="block px-3 py-2 hover:bg-gray-200">Inovasi</a>
                     <a href="/bisnisdash" class="block px-3 py-2 hover:bg-gray-200">Bisnis</a>
+                    <a href="/bisnisdash" class="block px-3 py-2 hover:bg-gray-200">Pengabdian Masyarakat</a>
                 </div>
             </div>
 
@@ -66,7 +81,7 @@
 
                 <div class="dropdownMenu absolute hidden w-36 bg-white text-black right-0 mt-2 rounded-xl shadow-lg text-xs">
                     <a href="/magangdash" class="block px-3 py-2 hover:bg-gray-200">MBKM dan Magang</a>
-                    <a href="/collabdash" class="block px-3 py-2 hover:bg-gray-200">kerja Sama</a>
+                    <a href="/collabdash" class="block px-3 py-2 hover:bg-gray-200">Kerja Sama</a>
                 </div>
             </div>
         </div>

@@ -42,11 +42,11 @@ Route::get('/risetdash', function () {
     return view('activity.riset-publikasi.dashboard-page');
 });
 
-Route::get('/risetdash2', function () {
-    return view('activity.riset-publikasi.dashboard');
-});
+// Route::get('/risetdash2', function () {
+//     return view('activity.riset-publikasi.dashboard');
+// });
 
-Route::get('/innovillage/dashboard', function () {
+Route::get('/innovillagedash', function () {
     return view('activity.innovillage.dashboard-page');
 });
 

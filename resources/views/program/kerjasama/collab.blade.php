@@ -70,12 +70,12 @@
 
             if (window.scrollY > 0) {
                 // Saat user melewati banner section
-                navbar.classList.add('bg-white', 'shadow-md', 'text-black');
-                navbar.classList.remove('bg-transparent', 'text-white');
+                navbar.classList.add('bg-white', 'shadow-md', 'px-28');
+                navbar.classList.remove('text-white', 'mx-16', 'rounded-b-2xl');
             } else {
                 // Saat user berada di dalam banner section
-                navbar.classList.add('bg-transparent', 'text-white');
-                navbar.classList.remove('bg-white', 'shadow-md', 'text-black');
+                navbar.classList.add('bg-white', 'mx-16', 'rounded-b-2xl');
+                navbar.classList.remove('shadow-md', 'px-28');
             }
         });
 
