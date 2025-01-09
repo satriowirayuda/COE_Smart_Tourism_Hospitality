@@ -19,7 +19,6 @@
 
             <!-- Dropdown Tentang Kami -->
             <div class="relative dropdown">
-                <!-- Tentang Kami -->
                 <button class="dropdownButton flex items-center pr-6 text-sm font-semibold hover:text-[#F6A11F] 
                 {{ request()->is('sejarah', 'anggota') ? 'text-[#F6A11F]' : '' }}">
                     Tentang Kami
