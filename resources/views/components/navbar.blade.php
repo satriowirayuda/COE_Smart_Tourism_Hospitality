@@ -5,7 +5,7 @@
   <div class="flex flex-wrap items-center justify-between px-5 py-2">
     <a id="navbarIconText" href="{{ route('home') }}" class="flex items-center space-x-3">
       <img src="{{ asset('assets/logo.png') }}" class="h-8 md:h-16 lg:h-16" alt="Ceo Smart Toursm" />
-      <span class="self-center whitespace-nowrap text-xs font-semibold md:text-xl">
+      <span class="font-poppins self-center whitespace-nowrap text-xs font-semibold md:text-xl">
         Center of Excellence
         <br />
         Smart Tourism & Hospitality
@@ -36,7 +36,7 @@
         <!-- Tentang Kami Dropdown -->
         <li class="relative md:block">
           <button id="dropdownAboutUsLink" data-dropdown-toggle="aboutUsDropdown"
-            class="{{ Request::is('/sejarah') ? 'text-orange1' : '' }} flex w-full items-center justify-between rounded px-3 py-2 hover:bg-gray-100 hover:text-orange1 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent">
+            class="{{ Request::is('/sejarah') ? 'text-orange1' : '' }} flex w-full items-center justify-between rounded px-3 py-2 hover:bg-gray-100 hover:text-orange1 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent font-poppins">
             Tentang Kami
             <svg id="toggledropDownIcon1" class="ms-2.5 h-2.5 w-2.5 transition-transform duration-300"
               aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

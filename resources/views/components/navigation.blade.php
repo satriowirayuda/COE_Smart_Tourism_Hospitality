@@ -5,7 +5,7 @@
             <div class="h-[3.5rem] lg:h-[4rem] py-1">
                 <img src="{{ asset('assets/logo_sth.svg') }}" alt="" class="h-full">
             </div>
-            <div class="flex flex-col justify-center font-lota1">
+            <div class="flex flex-col justify-center font-poppins">
                 <span class="text-base font-semibold">Center of Excellence</span>
                 <span class="text-base font-semibold">Smart Tourism & Hospitality</span>
             </div>
@@ -13,13 +13,13 @@
 
         <!-- Menu Links (hidden on mobile) -->
         <div class="hidden md:flex items-center space-x-6">
-            <a href="/" class="pr-6 text-sm font-semibold hover:text-[#F6A11F] {{ request()->is('/') ? 'text-[#F6A11F] font-semibold' : '' }}">
+            <a href="/" class="pr-6 text-sm font-poppins font-semibold hover:text-[#F6A11F] {{ request()->is('/') ? 'text-[#F6A11F] font-semibold' : '' }}">
                 Beranda
             </a>
 
             <!-- Dropdown Tentang Kami -->
             <div class="relative dropdown">
-                <button class="dropdownButton flex items-center pr-6 text-sm font-semibold hover:text-[#F6A11F] 
+                <button class="dropdownButton flex items-center pr-6 text-sm font-poppins font-semibold hover:text-[#F6A11F] 
                 {{ request()->is('sejarah', 'anggota') ? 'text-[#F6A11F]' : '' }}">
                     Tentang Kami
                     <svg class="w-3 h-3 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -29,14 +29,14 @@
                 </button>
 
                 <div class="dropdownMenu absolute hidden w-36 bg-white text-black mt-2 rounded-xl shadow-lg text-xs">
-                    <a href="/sejarah" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Sejarah CoE STH</a>
-                    <a href="/anggota" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Anggota Tim</a>
+                    <a href="/sejarah" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Sejarah CoE STH</a>
+                    <a href="/anggota" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Anggota Tim</a>
                 </div>
             </div>
 
             <!-- Dropdown Aktivitas -->
             <div class="relative dropdown">
-                <button class="dropdownButton flex items-center pr-6 text-sm font-medium hover:text-[#F6A11F] focus:text-[#F6A11F] {{ request()->is() ? 'text-[#F6A11F]' : '' }}">
+                <button class="dropdownButton flex items-center pr-6 text-sm font-poppins font-medium hover:text-[#F6A11F] focus:text-[#F6A11F] {{ request()->is() ? 'text-[#F6A11F]' : '' }}">
                     Aktivitas
                     <svg class="w-3 h-3 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@
                     <a href="/berita/semua" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Berita</a>
 
                     <div class="relative group">
-                        <a href="/risetdash" class="px-3 py-2 text-black font-normal hover:bg-gray-200 flex justify-between items-center">
+                        <a href="/risetdash" class="px-3 py-2 font-poppins text-black font-normal hover:bg-gray-200 flex justify-between items-center">
                             Riset dan Publikasi
                             <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -56,20 +56,20 @@
                             </svg>
                         </a>
                         <div class="absolute left-full top-0 w-32 hidden group-hover:block bg-white text-black mt-0 rounded-xl shadow-lg text-xs">
-                            <a href="/innovillagedash" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Innovillage</a>
-                            <a href="/jurnaldash" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Jurnal Penelitian</a>
+                            <a href="/innovillagedash" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Innovillage</a>
+                            <a href="/jurnaldash" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Jurnal Penelitian</a>
                         </div>
                     </div>
 
-                    <a href="/inovasidash" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Inovasi</a>
-                    <a href="/bisnisdash" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Bisnis</a>
-                    <a href="#" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Pengabdian Masyarakat</a>
+                    <a href="/inovasidash" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Inovasi</a>
+                    <a href="/bisnisdash" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Bisnis</a>
+                    <a href="#" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Pengabdian Masyarakat</a>
                 </div>
             </div>
 
             <!-- Dropdown Program -->
             <div class="relative dropdown">
-                <button class="dropdownButton flex items-center text-sm font-semibold hover:text-[#F6A11F] active:text-[#F6A11F] focus:text-[#F6A11F] {{ request()->is('magangdash', 'collabdash') ? 'text-[#F6A11F]' : '' }}">
+                <button class="dropdownButton flex items-center text-sm font-poppins font-semibold hover:text-[#F6A11F] active:text-[#F6A11F] focus:text-[#F6A11F] {{ request()->is('magangdash', 'collabdash') ? 'text-[#F6A11F]' : '' }}">
                     Program
                     <svg class="w-3 h-3 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -78,8 +78,8 @@
                 </button>
 
                 <div class="dropdownMenu absolute hidden w-36 bg-white text-black right-0 mt-2 rounded-xl shadow-lg text-xs">
-                    <a href="/magangdash" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">MBKM dan Magang</a>
-                    <a href="/collabdash" class="text-black font-normal block px-3 py-2 hover:bg-gray-200">Kerja Sama</a>
+                    <a href="/magangdash" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">MBKM dan Magang</a>
+                    <a href="/collabdash" class="font-poppins text-black font-normal block px-3 py-2 hover:bg-gray-200">Kerja Sama</a>
                 </div>
             </div>
 

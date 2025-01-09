@@ -12,19 +12,19 @@
     <section class="px-4 sm:px-8 lg:px-28 lg:pt-10">
         <div class="border-t-[1px] border-black"></div>
         <div class="py-10">
-            <div class="text-3xl lg:text-5xl font-semibold text-center">
+            <div class="text-3xl lg:text-5xl font-lota2 font-semibold text-center">
                 <p>Visi dan Misi</p>
                 <p>COE Smart Tourism & Hospitality</p>
             </div>
             <div class="flex flex-col lg:flex-row gap-y-6 lg:gap-x-6 py-10 text-white">
                 <div class="flex-1 py-10 px-6 sm:px-8 lg:px-10 bg-gradient-to-b from-[#ff8a00] to-[#995300] rounded-lg">
-                    <p class="text-3xl sm:text-4xl lg:text-5xl font-semibold">Visi</p>
-                    <p class="font-paragraf-sth text-[16px] sm:text-[18px] font-bold pt-8">Menjadi Research Center
+                    <p class="text-3xl sm:text-4xl lg:text-5xl font-lota2 font-semibold">Visi</p>
+                    <p class="font-lota2 text-[16px] sm:text-[18px] font-semibold pt-8">Menjadi Research Center
                         pariwisata dan hospitality unggul berbasis teknologi informasi dan komunikasi.</p>
                 </div>
                 <div class="flex-1 py-10 px-6 sm:px-8 lg:px-10 bg-gradient-to-b from-[#2593CF] to-[#134B69] rounded-lg">
-                    <p class="text-3xl sm:text-4xl lg:text-5xl font-semibold">Misi</p>
-                    <div class="font-paragraf-sth text-[16px] sm:text-[18px] font-bold pt-8">
+                    <p class="text-3xl sm:text-4xl lg:text-5xl font-lota2 font-semibold">Misi</p>
+                    <div class="font-lota2 text-[16px] sm:text-[18px] font-semibold pt-8">
                         <ol class="list-decimal px-4 sm:px-6">
                             <li>Meningkatkan kualitas produk dan layanan pariwisata dan hospitality melalui
                                 digitalisasi, teknologi, dan inovasi terkini.</li>
