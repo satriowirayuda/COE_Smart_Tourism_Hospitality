@@ -14,7 +14,8 @@
 
             <p class="mb-3 text-2xl sm:text-[26px] lg:text-3xl font-semibold lg:font-normal">Dr. Ersy Ervina, S.Sos., MM. Par</p>
             <p class="mt-3 lg:mt-8 leading-relaxed text-justify font-light text-[14px] sm-[16px] lg:text-[20px]">
-            Center of Excellence STH (Smart Tourism and Hospitality) merupakan pusat unggulan di bidang pariwisata dan hospitality yang berfokus pada riset, inovasi, bisnis, dan pengabdian masyarakat. Center of Excellence STH menciptakan produk dan layanan yang berdaya saing. Melalui kolaborasi lintas sektor dan pengembangan kompetensi sumber daya manusia, Center of Excellence STH siap mendukung kemajuan pariwisata Indonesia yang berkelanjutan.
+            Center of Excellence STH (Smart Tourism and Hospitality) merupakan pusat unggulan di bidang pariwisata dan hospitality yang berfokus pada riset, inovasi, bisnis, dan pengabdian kepada masyarakat. 
+            Center of Excellence STH menciptakan produk dan layanan yang berdaya saing. Melalui kolaborasi lintas sektor dan pengembangan kompetensi Sumber Daya Manusia, Center of Excellence STH siap mendukung kemajuan pariwisata Indonesia yang berkelanjutan.
             </p>
         </div>
 

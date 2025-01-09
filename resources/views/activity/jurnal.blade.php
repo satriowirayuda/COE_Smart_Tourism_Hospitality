@@ -38,7 +38,7 @@
                     
                     <div class="flex gap-3">
                         <img class="w-[28px] h-[24px] my-auto" src="{{asset('assets/id.png')}}" alt="id">
-                        <a class="text-lg font-light underline underline-offset-4" href="https://doi.org/10.62951/momat.v1i3.32">
+                        <a class="text-lg font-light underline underline-offset-4" target="_blank" href="https://doi.org/10.62951/momat.v1i3.32">
                             https://doi.org/10.62951/momat.v1i3.32
                         </a>
                     </div>
@@ -50,7 +50,7 @@
             </div>
 
             <div class="bg-[#CCE2FF] w-28 h-8 mt-4 ml-auto text-center justify-center rounded-lg text-base text-black font-light border-2 border-[#D9D9D9] underline underline-offset-2">
-                <a href="#" target="_blank">Selengkapnya</a>
+                <a href="https://doi.org/10.62951/momat.v1i3.32" target="_blank">Selengkapnya</a>
             </div>
         </div>
 
@@ -76,7 +76,7 @@
                     
                     <div class="flex gap-3">
                         <img class="w-[28px] h-[24px] my-auto" src="{{asset('assets/id.png')}}" alt="id">
-                        <a class="text-lg font-light underline underline-offset-4" href="https://doi.org/10.62951/momat.v1i3.32">
+                        <a class="text-lg font-light underline underline-offset-4" target="_blank" href="https://doi.org/10.62951/momat.v1i3.32">
                             https://doi.org/10.62951/momat.v1i3.32
                         </a>
                     </div>
@@ -88,7 +88,7 @@
             </div>
 
             <div class="bg-[#CCE2FF] w-28 h-8 mt-4 ml-auto text-center justify-center rounded-lg text-base text-black font-light border-2 border-[#D9D9D9] underline underline-offset-2">
-                <a href="#" target="_blank">Selengkapnya</a>
+                <a href="https://doi.org/10.62951/momat.v1i3.32" target="_blank">Selengkapnya</a>
             </div>
         </div>
 

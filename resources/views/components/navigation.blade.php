@@ -5,6 +5,8 @@
             <div class="h-[3.5rem] lg:h-[4rem] py-1">
                 <img src="{{ asset('assets/logo_sth.svg') }}" alt="" class="h-full">
             </div>
+            
+            <!-- jarakin ini -->
             <div class="flex flex-col justify-center">
                 <span class="text-base font-semibold">Center of Excellence</span>
                 <span class="text-base font-semibold">Smart Tourism & Hospitality</span>

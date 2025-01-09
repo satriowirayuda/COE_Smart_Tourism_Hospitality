@@ -10,7 +10,8 @@ export default {
             fontFamily: {
                 lota1: ["'Lota Grotesque Alt 1'", "sans-serif"],
                 lota2: ["'Lota Grotesque Alt 2'", "sans-serif"],
-                poppins: ["Poppins", "sans-serif"]
+                poppins: ["Poppins", "sans-serif"],
+                arial: ["Arial"]
                 // default: ["Lota Grotesque Alt 2"],
                 // "paragraf-sth": "Lota Grotesque Alt 1",
             },

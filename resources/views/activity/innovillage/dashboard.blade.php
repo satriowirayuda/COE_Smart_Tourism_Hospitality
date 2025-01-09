@@ -20,7 +20,7 @@
             <img src="{{ asset('assets/img.png')}}" alt="" class="w-[200px] md:w-[500px] lg:w-[600px]">
             <div class="w-[300px] lg:w-[500px] lg:h-[300px] bg-orange bg-opacity-70 font-lota2 text-white py-3 md:py-5 lg:py-10 px-2 md:px-4 lg:px-5 absolute z-0 top-10 right-0">
                 <p class="font-bold text-sm md:text-lg lg:text-xl">Innovillage</p>
-                <p class="text-[8px] md:text-base lg:text-lg pt-5 line-clamp-6">Innovillage adalah program yang bertujuan mendorong inovasi dalam pengembangan desa wisata dengan memanfaatkan teknologi dan solusi kreatif. Program ini melibatkan kolaborasi antara pemerintah, akademisi, dan masyarakat lokal untuk meningkatkan daya tarik, keberlanjutan, dan pengelolaan desa wisata. Innovillage mendorong pengembangan infrastruktur, pemberdayaan masyarakat, dan penggunaan teknologi untuk meningkatkan pengalaman wisata dan akses informasi, sehingga dapat memperkuat sektor pariwisata di daerah tersebut
+                <p class="text-[8px] md:text-base lg:text-lg pt-5 line-clamp-6">Innovillage adalah program yang bertujuan mendorong inovasi dalam pengembangan desa dengan memanfaatkan teknologi dan solusi kreatif. Program ini melibatkan kolaborasi antara pemerintah, akademisi, dan masyarakat lokal untuk meningkatkan daya tarik, keberlanjutan, dan pengelolaan desa wisata. Innovillage mendorong pengembangan infrastruktur, pemberdayaan masyarakat, dan penggunaan teknologi untuk meningkatkan pengalaman wisata dan akses informasi, sehingga dapat memperkuat sektor pariwisata di daerah tersebut
                 </p>
             </div>
         </div>

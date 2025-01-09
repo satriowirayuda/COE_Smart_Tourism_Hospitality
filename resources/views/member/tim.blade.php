@@ -1,7 +1,41 @@
-<section class="bg-background w-full pt-10 pb-28 font-lota1">
+<body>
+    
+<section class=" w-full pt-10 pb-28 font-lota1">
     <div class="px-5 md:px-10 lg:px-28">
+        <div class="mx-auto mb-10 border-t-[1px] border-[#A9A9A9]"></div>
 
-        <p class="text-xl md:text-2xl font-semibold pb-10">Tim Magang Kami</p>
+        <p class="mx-auto text-center text-xl md:text-2xl font-semibold">Tim Magang Kami</p>
+
+        <div class="flex justify-center bg-white rounded-[15px] md:rounded-[30px] lg:rounded-[40px] w-[400px] h-10 md:h-14 lg:h-14 mx-auto border border-[#5D5D5D] my-10 gap-9 text-sm font-semibold text-black">
+            <button 
+                id="inhouseButton" 
+                class=""
+                onclick="showInhouse()">
+                Dosen
+            </button>
+
+            <div class="flex items-center">
+                <div class="border-r-[1px] border-black h-7"></div> 
+            </div>
+
+            <button 
+                id="inhouseButton" 
+                class=""
+                onclick="showInhouse()">
+                Anggota
+            </button>
+            
+            <div class="flex items-center">
+                <div class="border-r-[1px] border-black h-7"></div>
+            </div>
+
+            <button 
+                id="inhouseButton" 
+                class=""
+                onclick="showInhouse()">
+                Alumni
+            </button>
+        </div>
 
         <div
             class="bg-gradient-to-b from-[#2593CF] from-85% to-[#134B69] to-100% rounded-[20px] sm:rounded-[30px] lg:rounded-[40px] shadow-2xl pt-10 pb-16 px-4 md:px-10 lg:px-20">
@@ -49,29 +83,6 @@
                     </div>
                 </div>
 
-                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
-                    <div class="relative">
-                        <img src="{{ asset('assets/anggota-3.png') }}" alt="anggota" class="rounded-lg">
-                        <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
-                        <p class="font-semibold text-white">Nama Anggota</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
-                    </div>
-                </div>
-
-                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
-                    <div class="relative">
-                        <img src="{{ asset('assets/anggota-1.png') }}" alt="anggota" class="rounded-lg">
-                        <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
-                        <p class="font-semibold text-white">Nama Anggota</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -97,45 +108,37 @@
                     </div>
                 </div>
                 
-                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
-                    <div class="relative">
-                        <img src="{{ asset('assets/anggota-2.png') }}" alt="anggota" class="rounded-lg">
-                        <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
-                        <p class="font-semibold text-white">Nama Alumni</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
-                    </div>
-                </div>
-
-                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
-                    <div class="relative">
-                        <img src="{{ asset('assets/anggota-3.png') }}" alt="anggota" class="rounded-lg">
-                        <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
-                        <p class="font-semibold text-white">Nama Alumni</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
-                    </div>
-                </div>
-
-                <div class="relative w-40 md:w-48 lg:w-52 mx-auto">
-                    <div class="relative">
-                        <img src="{{ asset('assets/anggota-1.png') }}" alt="anggota" class="rounded-lg">
-                        <div class = "absolute inset-0 bg-gradient-to-b from-black/0 to-black/50 to-100% rounded-lg">
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 w-full text-[9px] md:text-[11px] lg:text-sm px-2 py-5">
-                        <p class="font-semibold text-white">Nama Alumni</p>
-                        <p class="text-pink-sth pt-1">JABATAN</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    function showInhouse() {
+    // Tampilkan bagian Inhouse
+    document.getElementById('inhouseSection').classList.remove('hidden');
+    document.getElementById('alumniSection').classList.add('hidden');
+
+    // Ubah status tombol
+    const inhouseButton = document.getElementById('inhouseButton');
+    const alumniButton = document.getElementById('alumniButton');
+    inhouseButton.classList.add('bg-orange1', 'text-white', 'active'); // Tambahkan warna oranye
+    alumniButton.classList.remove('bg-blue', 'text-white', 'active'); // Kembalikan tombol Alumni ke default
+    }
+
+    function showAlumni() {
+    // Tampilkan bagian Alumni
+    document.getElementById('inhouseSection').classList.add('hidden');
+    document.getElementById('alumniSection').classList.remove('hidden');
+
+    // Ubah status tombol
+    const alumniButton = document.getElementById('alumniButton');
+    const inhouseButton = document.getElementById('inhouseButton');
+    alumniButton.classList.add('bg-blue', 'text-white', 'active'); // Tambahkan warna biru
+    inhouseButton.classList.remove('bg-orange1', 'text-white', 'active'); // Kembalikan tombol Inhouse ke default
+    }
+</script>
+
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 <body>
 
     <section class="pt-10 font-lota1">
-        <div class="px-5 lg:px-28 pb-10">
+        <div class="px-5 lg:px-28">
             <div class="text-2xl sm:text-3xl lg:text-5xl font-semibold text-center">
                 <p>Anggota Tim COE</p>
                 <p>Smart Tourism & Hospitality</p>

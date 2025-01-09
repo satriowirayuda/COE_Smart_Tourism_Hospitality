@@ -24,7 +24,7 @@
             </div>
 
             <div class="pt-5 ">
-                <p class="text-[15px] sm:text-lg lg:text-xl text-[#bbbbbb]">Tingkatkan pengalaman Anda dengan Smart Tourism dan Hospitality! Hemat waktu, jelajahi lebih banyak, dan rasakan kenyamanan teknologi.</p>
+                <p class="text-[15px] sm:text-lg lg:text-xl text-[#bbbbbb]">Center of Excellence STH (Smart Tourism and Hospitality) merupakan pusat unggulan di bidang pariwisata dan hospitality yang berfokus pada riset, inovasi, bisnis, dan pengabdian kepada masyarakat.</p>
             </div>
         </div>
     </section>
