@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <section class="mx-auto p-10 pt-24">
+    <section class="mx-auto px-10 pt-28">
     <x-white-navigation />
 
         <div>
