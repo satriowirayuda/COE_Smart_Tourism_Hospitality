@@ -20,7 +20,7 @@
             <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
                 <div class="text-center font-calibri font-extralight">
                     <p class="text-base sm:text-xl md:text-4xl lg:text-6xl font-bold">Inovasi</p>
-                    <p class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl italic">Center of Excellence Smart Tourism & Hospitality</p>
+                    <p class="text-3xl sm:text-3xl md:text-3xl lg:text-4xl">Center of Excellence Smart Tourism & Hospitality</p>
                 </div>
             </div>
 
