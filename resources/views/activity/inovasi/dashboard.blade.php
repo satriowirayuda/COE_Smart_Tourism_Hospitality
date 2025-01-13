@@ -48,7 +48,7 @@
             
             <div class="text-center bg-white shadow-xl rounded-2xl overflow-hidden w-[175px] h-[240px] sm:w-[310px] sm:h-[340px] lg:w-[310px] lg:h-[340px] transform transition-transform duration-300 hover:scale-110">
                 <a href="/lotusdash">
-                    <img src="{{ asset('assets/blotus.png') }}" alt="" class="w-full rounded-t-xl">
+                    <img src="{{ asset('assets/lotus.png') }}" alt="" class="w-full rounded-t-xl">
                     <div class="px-8 py-4">
                         <p class="text-sm font-bold line-clamp-1">LOTUS</p>
                         <p class="text-sm font-light line-clamp-4">LOTUS (Lorong Waktu Sejarah) merupakan sebuah mini bioskop yang 100% isi konten memanfaatkan AI (Artificial Intelligence)</p>
