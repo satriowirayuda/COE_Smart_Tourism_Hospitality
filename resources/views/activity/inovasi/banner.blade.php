@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class="relative pt-28">
+    <section class="relative pt-28 font-arial">
     <x-white-navigation />
         <div class="absolute w-full bg-biru-sth h-[230px] lg:h-[340px] top-0 left-0 -z-10"></div>
 
@@ -18,9 +18,9 @@
                 src="{{ asset('assets/binovasi.png') }}" alt="">
 
             <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
-                <div class="text-center font-calibri font-extralight">
-                    <p class="text-base sm:text-xl md:text-4xl lg:text-6xl font-bold">Inovasi</p>
-                    <p class="text-3xl sm:text-3xl md:text-3xl lg:text-4xl">Center of Excellence Smart Tourism & Hospitality</p>
+                <div class="text-center">
+                    <p class="text-xl sm:text-xl md:text-4xl lg:text-6xl font-bold">Inovasi</p>
+                    <p class="text-sm sm:text-lg md:text-2xl lg:text-4xl font-thin">Center of Excellence Smart Tourism & Hospitality</p>
                 </div>
             </div>
 

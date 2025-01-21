@@ -1,8 +1,8 @@
-<section id="news-container" class="lg:px-36 px-5 py-10 m-auto">
+<section id="news-container" class="lg:px-36 px-5 py-10 m-auto font-arial">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
         <!-- News -->
         <div>
-            <p class="pb-10 text-center font-bold font-lota2 text-4xl drop-shadow-5xl">News</p>
+            <p class="pb-10 text-center font-bold text-4xl drop-shadow-5xl">Berita</p>
             <div class="relative">
                 <div class="rounded-[15px] overflow-hidden">
                     <div class="relative w-full max-w-md mx-auto">
@@ -19,7 +19,7 @@
                         </div>
                     </div>
 
-                    <div class="text-white absolute top-0 right-0 px-10 py-5 text-base font-lota1">
+                    <div class="text-white absolute top-0 right-0 px-10 py-5 text-base">
                         <a href="#" target="_blank">
                             Selengkapnya
                             <i class="fas fa-arrow-right ml-1"></i>
@@ -28,7 +28,7 @@
 
                     <div class="absolute bottom-0 left-0 w-full text-white px-10 py-5">
                         <p class="text-4xl font-bold">Judul Berita</p>
-                        <p class="font-lota1 text-base pt-2">
+                        <p class="text-base pt-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard.
                         </p>
@@ -39,7 +39,7 @@
 
         <!-- Timeline -->
         <div>
-            <p class="pb-10 text-center font-bold font-lota2 text-4xl drop-shadow-5xl">Timeline</p>
+            <p class="pb-10 text-center font-bold text-4xl drop-shadow-5xl">Kegiatan</p>
             <div>
                 <p class="text-[13px] italic font-bold mb-2">Event LKM</p>
                 <table class="w-full table-auto mb-3">

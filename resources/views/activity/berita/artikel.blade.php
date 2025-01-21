@@ -10,7 +10,7 @@
     <div class="flex bg-white rounded-[40px] h-14 mx-[110px] shadow-2xl my-10 pl-20 items-center gap-9 text-sm font-semibold text-black">
         <a href="{{url('berita/semua')}}">Semua</a>
         <div class="border-r-[1px] border-black h-7"></div>
-        <a href="#" class="text-[#025D9F]">Artikel</a>
+        <a href="#" class="text-[#FF8A00]">Artikel</a>
         <div class="border-r-[1px] border-black h-7"></div>
         <a href="{{url('berita/penghargaan')}}">Penghargaan</a>
     </div>

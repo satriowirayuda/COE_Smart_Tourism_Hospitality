@@ -51,11 +51,11 @@ Route::get('/innovillagedash', function () {
 });
 
 Route::get('/ideinnodash', function () {
-    return view('activity.ideinnovillage.ideinnovillage-page');
+    return view('activity.innovillage.ideinnovillage-page');
 });
 
 Route::get('/jurnaldash', function () {
-    return view('activity.jurnal');
+    return view('activity.riset-publikasi.jurnal');
 });
 
 Route::get('/inovasidash', function () {
@@ -92,6 +92,10 @@ Route::get('/collabdash', function () {
 
 Route::get('/pengmasdash', function () {
     return view('activity.pengmas.dashboard-page');
+});
+
+Route::get('/ihkadash', function () {
+    return view('activity.pengmas.ihka-page');
 });
 
 // Login

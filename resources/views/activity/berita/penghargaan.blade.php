@@ -12,7 +12,7 @@
         <div class="border-r-[1px] border-black h-7"></div>
         <a href="{{url('berita/artikel')}}">Artikel</a>
         <div class="border-r-[1px] border-black h-7"></div>
-        <a href="{{url('berita/penghargaan')}}" class="text-[#025D9F]">Penghargaan</a>
+        <a href="{{url('berita/penghargaan')}}" class="text-[#FF8A00]">Penghargaan</a>
     </div>
 
     <section class="mx-[110px] mb-28 space-y-5">

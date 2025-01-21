@@ -1,4 +1,4 @@
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-20 w-full bg-transparent px-28 py-2 transition-all duration-300">
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-20 text-white w-full bg-transparent px-28 py-2 transition-all duration-300">
     <div class="container mx-auto flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center gap-2">
@@ -52,15 +52,15 @@
                     <div class="relative group">
                         <a href="/risetdash" class="px-3 py-2  text-black font-normal hover:bg-gray-200 flex justify-between items-center">
                             Riset dan Publikasi
-                            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            <!-- <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
+                            </svg> -->
                         </a>
-                        <div class="absolute left-full top-0 w-32 hidden group-hover:block bg-white text-black mt-0 rounded-xl shadow-lg text-xs">
+                        <!-- <div class="absolute left-full top-0 w-32 hidden group-hover:block bg-white text-black mt-0 rounded-xl shadow-lg text-xs">
                             <a href="/innovillagedash" class=" text-black font-normal block px-3 py-2 hover:bg-gray-200">Innovillage</a>
                             <a href="/jurnaldash" class=" text-black font-normal block px-3 py-2 hover:bg-gray-200">Jurnal Penelitian</a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <a href="/inovasidash" class=" text-black font-normal block px-3 py-2 hover:bg-gray-200">Inovasi</a>

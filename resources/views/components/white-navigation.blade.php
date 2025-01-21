@@ -1,19 +1,19 @@
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-20 mx-16 rounded-b-2xl bg-white px-12 py-2 shadow-md">
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-20 mx-0 lg:mx-16 rounded-none lg:rounded-b-2xl bg-white px-8 lg:px-12 py-2 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
         <!-- Logo --> 
         <div class="flex items-center gap-2">
-            <div class="h-[3.5rem] lg:h-[4rem] py-1">
+            <div class="h-10 lg:h-16 py-1">
                 <img src="{{ asset('assets/logo_sth.svg') }}" alt="" class="h-full">
             </div>
             <div class="flex flex-col justify-center">
-                <span class="text-base font-semibold">Center of Excellence</span>
-                <span class="text-base font-semibold">Smart Tourism & Hospitality</span>
+                <span class="text-[10px] sm:text-sm lg:text-base font-semibold">Center of Excellence</span>
+                <span class="text-[10px] sm:text-sm lg:text-base font-semibold">Smart Tourism & Hospitality</span>
             </div>
         </div>
 
         <!-- Menu Links (hidden on mobile) -->
         <div class="hidden md:flex items-center space-x-6">
-            <a href="/" class="pr-6 text-sm font-semibold hover:text-[#F6A11F] {{ request()->is('/') ? 'text-[#F6A11F] font-semibold' : '' }}">
+            <a href="/" class="pr-6 text-sm font-semibold hover:text-[#F6A11F] {{ request()->is('/') ? 'text-[#F6A11F]' : '' }}">
                 Beranda
             </a>
 
@@ -45,20 +45,14 @@
                     </svg>
                 </button>
 
-                <div class="dropdownMenu absolute hidden w-40 bg-white text-black mt-2 rounded-xl shadow-lg text-xs">
+                <div class="dropdownMenu absolute hidden w-44 bg-white text-black mt-2 rounded-xl shadow-lg text-xs">
                     <a href="/berita/semua" class="block px-3 py-2 hover:bg-gray-200">Berita</a>
 
                     <div class="relative group">
                         <button class="px-3 py-2 flex justify-between items-center hover:text-[#F6A11F] {{ request()->is('innovillagedash', 'jurnaldash') ? 'text-[#F6A11F]' : '' }}">
                             <a href="/risetdash">Riset dan Publikasi</a>
-                            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
                         </button>
                         <div class="absolute left-full top-0 w-32 hidden group-hover:block bg-white text-black r mt-0 rounded-xl shadow-lg text-xs">
-                            <a href="/innovillagedash" class="block px-3 py-2 hover:bg-gray-200">Innovillage</a>
-                            <a href="/jurnaldash" class="block px-3 py-2 hover:bg-gray-200">Jurnal Penelitian</a>
                         </div>
                     </div>
 

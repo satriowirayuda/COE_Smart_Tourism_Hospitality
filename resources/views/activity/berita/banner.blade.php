@@ -34,7 +34,7 @@
 
             <div 
                 class="absolute bottom-5 md:bottom-10 lg:bottom-10 right-10 lg:right-40 bg-biru-sth bg-opacity-50 w-20 md:w-28 lg:w-40 h-5 md:h-6 lg:h-8 flex gap-2 items-center justify-center rounded-lg text-[8px] md:text-xs lg:text-base text-white font-semibold font-lota1">
-                <a href="#" target="_blank">Selengkapnya</a>
+                <a href="https://www.pikiran-rakyat.com/teknologi/pr-017501013/telkom-university-luncurkan-teknologi-lotus-ciptakan-video-hasil-ai-mengangkat-sejarah-kasepuhan-cirebon?page=all" target="_blank">Selengkapnya</a>
                 <img  class="hidden sm:hidden h-7" src="{{ asset('assets/arrow-ford.svg') }}">
             </div>
            

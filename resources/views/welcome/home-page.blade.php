@@ -27,13 +27,14 @@
 
             if (window.scrollY > 0) {
                 // Saat user melewati banner section
-                navbar.classList.add('bg-white', 'shadow-md', 'text-black');
+                navbar.classList.add('bg-white', 'shadow-md');
                 navbar.classList.remove('bg-transparent', 'text-white');
             } else {
                 // Saat user berada di dalam banner section
                 navbar.classList.add('bg-transparent', 'text-white');
                 navbar.classList.remove('bg-white', 'shadow-md');
             }
+            
         });
 
         // Toggle mobile menu visibility
@@ -67,17 +68,6 @@
                 dropdownMenus.forEach(menu => menu.classList.add('hidden'));
             });
 
-            // Highlight active menu
-            const currentPath = window.location.pathname; // Get the current URL path
-            const links = document.querySelectorAll('.dropdown a, .md\\:flex > a'); // Select all links
-
-            links.forEach(link => {
-                if (link.href.includes(currentPath)) {
-                    link.classList.add('text-[#F6A11F]', 'font-semibold'); // Add active styling
-                } else {
-                    link.classList.remove('text-[#F6A11F]', 'font-semibold'); // Remove active styling
-                }
-            });
         });
 
     </script>

@@ -1,4 +1,4 @@
-<section class="w-full bg-background py-10 lg:py-24 px-5 lg:px-28">
+<section class="w-full bg-background py-10 lg:py-24 px-5 lg:px-28 font-arial">
     <div class="lg:grid lg:grid-cols-3 gap-6 ">
         <div class="col-span-2">
 
@@ -39,7 +39,7 @@
             
             <!-- Inovasi -->
             <div class="relative group flex justify-center">
-                <img src="{{ asset('assets/inovasi.png') }}" alt="Inovasi"
+                <img src="{{ asset('assets/lotus1.jpg') }}" alt="Inovasi"
                     class="w-full sm:w-[400px] lg:w-[512px] h-auto object-cover shadow-2xl">
                 <div
                     class="absolute top-[-15px] left-1/2 transform -translate-x-1/2 w-52 h-[33.41px] rounded-md bg-[#2593CF] text-white italic font-semibold flex justify-center items-center shadow-2xl">
