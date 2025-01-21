@@ -8,62 +8,32 @@
 
 </head>
 <body>
-    <section class="mx-[110px] justify-center pt-10 py-14 space-y-5">
+    <section class="mx-5 md:mx-10 lg:mx-28 py-10 space-y-5 font-arial">
         <div class="text-center">
-            <p class="font-semibold text-3xl">Program MBKM dan Magang di </p>
-            <p class="font-semibold text-3xl">COE Smart Tourism  & Hospitality</p>
+            <p class="font-semibold text-base sm:text-2xl lg:text-3xl">Program MBKM dan Magang di </p>
+            <p class="font-semibold text-base sm:text-2xl lg:text-3xl">CoE Smart Tourism  & Hospitality</p>
         </div>
         <div class="flex gap-7 pt-6">
-            <img class="w-80 h-100" src="{{asset('assets/programpict.svg')}}" alt="Gambar Program">
+            <img class="w-80 h-100" src="{{asset('assets/uiux.png')}}" alt="Gambar Program">
             <div class="">
-                <p class="font-semibold text-2xl">Pengembangan Website</p>
+                <p class="font-semibold text-2xl">UI/UX Design</p>
                 <div class="flex gap-2 my-3">
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
+                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">D3 RPLA</p>
+                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">D3 SIA</p>
+                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">D3 TRM</p>
                 </div>
-                <p class="font-light text-justify text-lg">Di dunia yang terus berubah, industri pariwisata dan perhotelan memerlukan inovasi yang cerdas dan progresif untuk memimpin jalan ke depan. Pusat Keunggulan (COE) Smart Tourism dan Hospitality hadir sebagai wahana bagi kolaborasi, eksperimen Di dunia yang terus berubah, industri pariwisata dan perhotelan memerlukan inovasi yang cerdas dan progresif untuk memimpin jalan ke depan. Pusat Keunggulan (COE) Smart Tourism dan Hospitality hadir sebagai wahana bagi kolaborasi, eksperimen</p>
-
+                <p class="font-thin text-justify text-lg">UI/UX Design adalah bidang yang berfokus pada perancangan antarmuka (UI) dan pengalaman pengguna (UX) dalam produk digital seperti aplikasi atau website. UX Design memastikan produk mudah digunakan dan memberikan pengalaman yang menyenangkan, sementara UI Design menekankan pada tampilan visual yang menarik dan intuitif. Keduanya bekerja sama untuk menciptakan produk yang estetis sekaligus fungsional.</p>
+                
                 <div class="flex gap-3 mt-3">
-                    <p class="font-bold text-base">Project Terkait :</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">COE STH</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">IHMS</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex gap-7 pt-6">
-            <img class="w-80 h-100" src="{{asset('assets/programpict.svg')}}" alt="Gambar Program">
-            <div class="">
-                <p class="font-semibold text-2xl">Pengembangan Website</p>
-                <div class="flex gap-2 my-3">
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                </div>
-                <p class="font-light text-justify text-lg">Di dunia yang terus berubah, industri pariwisata dan perhotelan memerlukan inovasi yang cerdas dan progresif untuk memimpin jalan ke depan. Pusat Keunggulan (COE) Smart Tourism dan Hospitality hadir sebagai wahana bagi kolaborasi, eksperimen Di dunia yang terus berubah, industri pariwisata dan perhotelan memerlukan inovasi yang cerdas dan progresif untuk memimpin jalan ke depan. Pusat Keunggulan (COE) Smart Tourism dan Hospitality hadir sebagai wahana bagi kolaborasi, eksperimen</p>
-
-                <div class="flex gap-3 mt-3">
-                    <p class="font-bold text-base">Project Terkait :</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">COE STH</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">IHMS</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex gap-7 pt-6">
-            <img class="w-80 h-100" src="{{asset('assets/programpict.svg')}}" alt="Gambar Program">
-            <div class="">
-                <p class="font-semibold text-2xl">Pengembangan Website</p>
-                <div class="flex gap-2 my-3">
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">Major</p>
-                </div>
-                <p class="font-light text-justify text-lg">Di dunia yang terus berubah, industri pariwisata dan perhotelan memerlukan inovasi yang cerdas dan progresif untuk memimpin jalan ke depan. Pusat Keunggulan (COE) Smart Tourism dan Hospitality hadir sebagai wahana bagi kolaborasi, eksperimen Di dunia yang terus berubah, industri pariwisata dan perhotelan memerlukan inovasi yang cerdas dan progresif untuk memimpin jalan ke depan. Pusat Keunggulan (COE) Smart Tourism dan Hospitality hadir sebagai wahana bagi kolaborasi, eksperimen</p>
-
-                <div class="flex gap-3 mt-3">
-                    <p class="font-bold text-base">Project Terkait :</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">COE STH</p>
-                    <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-24">IHMS</p>
+                    <div class="font-semibold">Proyek Terkait:</div>
+                    <div class="grid grid-cols-3 gap-2">
+                        <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-auto px-3">Website CoE STH</p>
+                        <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-auto px-3">Aplikasi SiLotus</p>
+                        <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-auto px-3">IHKA</p>
+                        <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-auto px-3">IHMS</p>
+                        <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-auto px-3">Website RuteX</p>
+                        <p class="text-center text-base border-[1.5px] border-[#A9A9A9] rounded-md w-auto px-3">Visualisasi Data</p>
+                    </div>
                 </div>
             </div>
         </div>
