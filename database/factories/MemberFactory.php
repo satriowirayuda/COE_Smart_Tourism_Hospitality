@@ -17,7 +17,10 @@ class MemberFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'position' => $this->faker->jobTitle(),
+            'status' => $this->faker->randomElement(['inhouse', 'alumni']),
+            'photo' => $this->faker->imageUrl(640, 480, 'people', true, 'Faker'),
         ];
     }
 }

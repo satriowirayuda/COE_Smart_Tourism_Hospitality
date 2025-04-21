@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             "name" => "Admin",
             "username" => "ceo_admin",
-            "password" => bcrypt("password123"),
+            "password" => bcrypt("dsadsadsa"),
         ]);
         $this->call(NewsCategoriesSeeder::class);
         News::factory(10)->create();

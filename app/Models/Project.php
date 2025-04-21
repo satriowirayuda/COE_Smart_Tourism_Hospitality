@@ -9,9 +9,14 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'description',
-        'link',
-    ];
+    protected $guarded = ['id'];
+
+    public function getYtEmbedLinkAttribute()
+    {
+        $videoId = "";
+        if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $this->yt_link, $match)) {
+            $videoId = $match[1];
+        }
+        return "https://www.youtube.com/embed/" . $videoId;
+    }
 }

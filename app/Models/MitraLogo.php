@@ -19,4 +19,13 @@ class MitraLogo extends Model
     {
         return $this->belongsTo(Innovation::class, 'innovation_id', 'id');
     }
+    /**
+     * Get the community_service that owns the MitraLogo
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function community_service(): BelongsTo
+    {
+        return $this->belongsTo(CommunityService::class, 'community_service_id', 'id');
+    }
 }
