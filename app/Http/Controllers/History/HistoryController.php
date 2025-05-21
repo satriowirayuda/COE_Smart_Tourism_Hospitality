@@ -9,6 +9,6 @@ class HistoryController extends Controller
 {
     public function index()
     {
-        return view('public.about-us.history.index');
+        return view('public.about-us.history.index2');
     }
 }
