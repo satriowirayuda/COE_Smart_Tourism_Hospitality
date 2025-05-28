@@ -29,7 +29,7 @@ class TeamController extends Controller
         $member_type = $request->query('type', 'internal');
         $members = $this->getMembers($member_type);
 
-        return view('public.about-us.team.index', [
+        return view('public.about-us.team.index2', [
             "members" => $members,
             "member_options" => $this->member_options,
             "member_type" => $member_type

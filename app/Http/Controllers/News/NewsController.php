@@ -49,7 +49,7 @@ class NewsController extends Controller
         // Get all categories for navigation
         $categories = NewsCategory::select("id", "name")->get();
 
-        return view('public.activity.news.index', [
+        return view('public.activity.news.index2', [
             "newses" => $newses,
             "mainNews" => $mainNews,
             "categories" => $categories,
